@@ -76,11 +76,38 @@ function sectionClass(section){
 
 function sectionSlug(title){
   const normalized = String(title || "").toLowerCase();
+  if(normalized === "rules" || normalized.includes("basic house rules")) return "rules";
+  if(normalized.includes("responsibilities")) return "responsibilities";
+  if(normalized.includes("report issues")) return "report-issues";
+  if(normalized.includes("supplies")) return "supplies";
+  if(normalized.includes("parking")) return "parking";
+  if(normalized.includes("golf carts")) return "golf-carts";
+  if(normalized.includes("elevator") || normalized.includes("stairs")) return "elevator";
+  if(normalized.includes("pool") || normalized.includes("amenities")) return "pool";
+  if(normalized.includes("ac") || normalized.includes("heat") || normalized.includes("refrigerator")) return "ac-heat";
+  if(normalized.includes("trash")) return "trash";
+  if(normalized.includes("garbage disposal") || normalized.includes("toilets")) return "toilets";
+  if(normalized.includes("pest")) return "pest";
+  if(normalized.includes("cleaning") || normalized.includes("maintenance")) return "maintenance";
+  if(normalized.includes("refund") || normalized.includes("cancellation")) return "refunds";
+  if(normalized.includes("bbq") || normalized.includes("grill")) return "bbq";
+  if(normalized.includes("laundry")) return "laundry";
+  if(normalized.includes("tv") || normalized.includes("streaming")) return "tv";
   if(normalized.includes("checkout")) return "checkout";
+  if(normalized.includes("forgot")) return "forgot";
   return String(title || "section")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+function scrollToHashTarget(){
+  if(!window.location.hash)return;
+  const rawHash=decodeURIComponent(window.location.hash.slice(1)).trim();
+  if(!rawHash)return;
+  const targetId=sectionSlug(rawHash);
+  const target=document.getElementById(targetId) || document.getElementById(rawHash);
+  if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
 function shouldShowSection(section){
@@ -272,5 +299,7 @@ function loadGuide(){
     .map(normalizeSectionTitle)
     .sort((a,b)=>sectionOrder(a)-sectionOrder(b));
   document.getElementById("sections").innerHTML=sections.map(makeSection).join('');
+  setTimeout(scrollToHashTarget, 80);
 }
 loadGuide();
+window.addEventListener("hashchange", scrollToHashTarget);
