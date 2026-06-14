@@ -104,6 +104,14 @@ function sectionSlug(title){
     .replace(/^-|-$/g, "");
 }
 
+function sectionUrl(slug){
+  const params=new URLSearchParams(window.location.search);
+  ["section","s","anchor","jump","to"].forEach(name => params.delete(name));
+  params.set("s", slug);
+  const query=params.toString();
+  return `${window.location.pathname}${query ? `?${query}` : ""}`;
+}
+
 function sectionShortcutLabel(title){
   const normalized = String(title || "").toLowerCase();
   if(normalized.includes("basic house rules")) return "Rules";
@@ -154,7 +162,10 @@ function renderSectionShortcuts(sections){
   if(!sectionList)return;
   document.querySelector(".section-nav")?.remove();
   const links=sections
-    .map(section => `<a href="#${sectionSlug(section.title)}">${escapeHtml(sectionShortcutLabel(section.title))}</a>`)
+    .map(section => {
+      const slug=sectionSlug(section.title);
+      return `<a href="${sectionUrl(slug)}">${escapeHtml(sectionShortcutLabel(section.title))}</a>`;
+    })
     .join("");
   sectionList.insertAdjacentHTML("beforebegin", `<nav class="section-nav" aria-label="Guide section shortcuts">${links}</nav>`);
 }
@@ -280,7 +291,10 @@ function renderGuideOverview(guide, sections){
   if(existingNav) existingNav.remove();
 
   const navItems = sections
-    .map((section) => `<a href="#${sectionSlug(section.title)}">${escapeHtml(section.title)}</a>`)
+    .map((section) => {
+      const slug=sectionSlug(section.title);
+      return `<a href="${sectionUrl(slug)}">${escapeHtml(section.title)}</a>`;
+    })
     .join("");
 
   main.insertAdjacentHTML("afterbegin", `
