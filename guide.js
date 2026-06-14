@@ -104,6 +104,30 @@ function sectionSlug(title){
     .replace(/^-|-$/g, "");
 }
 
+function sectionShortcutLabel(title){
+  const normalized = String(title || "").toLowerCase();
+  if(normalized.includes("basic house rules")) return "Rules";
+  if(normalized.includes("responsibilities")) return "Responsibilities";
+  if(normalized.includes("report issues")) return "Report Issues";
+  if(normalized.includes("supplies")) return "Supplies";
+  if(normalized.includes("parking")) return "Parking";
+  if(normalized.includes("golf carts")) return "Golf Carts";
+  if(normalized.includes("elevator") || normalized.includes("stairs")) return "Elevator / Stairs";
+  if(normalized.includes("pool") || normalized.includes("amenities")) return "Pool";
+  if(normalized.includes("ac") || normalized.includes("heat") || normalized.includes("refrigerator")) return "AC / Heat";
+  if(normalized.includes("trash")) return "Trash";
+  if(normalized.includes("garbage disposal") || normalized.includes("toilets")) return "Toilets";
+  if(normalized.includes("pest")) return "Pest";
+  if(normalized.includes("cleaning") || normalized.includes("maintenance")) return "Maintenance";
+  if(normalized.includes("refund") || normalized.includes("cancellation")) return "Refunds";
+  if(normalized.includes("bbq") || normalized.includes("grill")) return "BBQ";
+  if(normalized.includes("laundry")) return "Laundry";
+  if(normalized.includes("tv") || normalized.includes("streaming")) return "TV";
+  if(normalized.includes("checkout")) return "Checkout";
+  if(normalized.includes("forgot")) return "Forgot Items";
+  return String(title || "Section");
+}
+
 function scrollToHashTarget(){
   if(!window.location.hash)return;
   const rawHash=decodeURIComponent(window.location.hash.slice(1)).trim();
@@ -111,6 +135,16 @@ function scrollToHashTarget(){
   const targetId=sectionSlug(rawHash);
   const target=document.getElementById(targetId) || document.getElementById(rawHash);
   if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function renderSectionShortcuts(sections){
+  const sectionList=document.getElementById("sections");
+  if(!sectionList)return;
+  document.querySelector(".section-nav")?.remove();
+  const links=sections
+    .map(section => `<a href="#${sectionSlug(section.title)}">${escapeHtml(sectionShortcutLabel(section.title))}</a>`)
+    .join("");
+  sectionList.insertAdjacentHTML("beforebegin", `<nav class="section-nav" aria-label="Guide section shortcuts">${links}</nav>`);
 }
 
 function shouldShowSection(section){
@@ -303,6 +337,7 @@ function loadGuide(){
     .map(section => normalizeParkingSection(guide, section))
     .map(normalizeSectionTitle)
     .sort((a,b)=>sectionOrder(a)-sectionOrder(b));
+  renderSectionShortcuts(sections);
   document.getElementById("sections").innerHTML=sections.map(makeSection).join('');
   setTimeout(scrollToHashTarget, 80);
 }
