@@ -75,6 +75,8 @@ function sectionClass(section){
 }
 
 function sectionSlug(title){
+  const normalized = String(title || "").toLowerCase();
+  if(normalized.includes("checkout")) return "checkout";
   return String(title || "section")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
