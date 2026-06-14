@@ -531,6 +531,79 @@ footer {
   padding: 18px;
 }
 
+.admin-login {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(11, 49, 72, 0.96), rgba(15, 127, 152, 0.88));
+}
+
+.admin-login-card {
+  width: min(460px, 100%);
+  padding: clamp(22px, 4vw, 34px);
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.admin-login-card .brand-pill {
+  position: static;
+  min-height: 0;
+  color: var(--navy);
+}
+
+.admin-login-card .brand-name {
+  color: var(--navy);
+  background: var(--sky);
+  border-color: var(--line);
+}
+
+.admin-login-card h1 {
+  margin: 18px 0 6px;
+  color: var(--navy);
+  font-family: "Palatino Linotype", Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+}
+
+.admin-login-card p {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.admin-login-card label {
+  display: block;
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-login-card input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.admin-login-card .admin-btn {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.admin-login-error {
+  min-height: 1.4em;
+  margin-top: 10px;
+  color: #9c2b2b;
+  font-weight: 900;
+}
+
 .admin-head {
   margin-bottom: 16px;
   padding: clamp(20px, 3vw, 34px);

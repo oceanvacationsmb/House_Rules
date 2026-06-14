@@ -1,6 +1,8 @@
 (function(){
 let data,currentSlug;
 const STORAGE_KEY = "oceanPropertyGuidesV28";
+const ADMIN_AUTH_KEY = "oceanAdminUnlocked";
+const ADMIN_PASSWORDS = ["ocean123++", "05960596"];
 
 function clone(x){return JSON.parse(JSON.stringify(x));}
 function load(){try{const saved=localStorage.getItem(STORAGE_KEY);if(saved)return JSON.parse(saved);}catch(e){} return clone(PROPERTY_GUIDES);}
@@ -90,7 +92,45 @@ function updateCurrent(showAlert){
 
 function render(){renderLinks();renderList();renderEditor();}
 
+function showAdminLogin(){
+  const shell=document.querySelector('.admin-shell');
+  if(!shell)return;
+  shell.innerHTML=`
+    <div class="admin-login">
+      <div class="admin-login-card">
+        <div class="brand-pill"><span class="brand-name">Ocean Vacations</span><span class="divider">|</span><span>Admin</span></div>
+        <h1>Guest Guide Settings</h1>
+        <p>Enter the admin password to continue.</p>
+        <form id="adminLoginForm">
+          <label for="adminPassword">Password</label>
+          <input id="adminPassword" type="password" autocomplete="current-password" autofocus>
+          <button class="admin-btn" type="submit">Unlock Admin</button>
+          <div class="admin-login-error" id="adminLoginError" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>`;
+  const form=shell.querySelector('#adminLoginForm');
+  const input=shell.querySelector('#adminPassword');
+  const error=shell.querySelector('#adminLoginError');
+  form.onsubmit=(event)=>{
+    event.preventDefault();
+    const password=input.value.trim();
+    if(ADMIN_PASSWORDS.includes(password)){
+      sessionStorage.setItem(ADMIN_AUTH_KEY,'1');
+      window.location.reload();
+      return;
+    }
+    error.textContent='Incorrect password.';
+    input.value='';
+    input.focus();
+  };
+}
+
 window.addEventListener('DOMContentLoaded',()=>{
+  if(sessionStorage.getItem(ADMIN_AUTH_KEY)!=='1'){
+    showAdminLogin();
+    return;
+  }
   data=load();
   currentSlug=props()[0]?.slug;
   render();
