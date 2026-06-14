@@ -130,8 +130,8 @@ function sectionShortcutLabel(title){
 
 function requestedSection(){
   const params=new URLSearchParams(window.location.search);
-  const fromQuery=params.get("section") || params.get("anchor") || params.get("jump");
-  if(fromQuery)return fromQuery.trim();
+  const fromQuery=params.get("section") || params.get("s") || params.get("anchor") || params.get("jump") || params.get("to");
+  if(fromQuery)return fromQuery.trim().split(/[&#?]/)[0];
   if(!window.location.hash)return "";
   return decodeURIComponent(window.location.hash.slice(1)).trim();
 }
@@ -142,6 +142,11 @@ function scrollToRequestedSection(){
   const targetId=sectionSlug(targetName);
   const target=document.getElementById(targetId) || document.getElementById(targetName);
   if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function scheduleSectionScroll(){
+  if(!requestedSection())return;
+  [80, 350, 900, 1800, 3000].forEach(delay => setTimeout(scrollToRequestedSection, delay));
 }
 
 function renderSectionShortcuts(sections){
@@ -346,7 +351,9 @@ function loadGuide(){
     .sort((a,b)=>sectionOrder(a)-sectionOrder(b));
   renderSectionShortcuts(sections);
   document.getElementById("sections").innerHTML=sections.map(makeSection).join('');
-  setTimeout(scrollToRequestedSection, 80);
+  scheduleSectionScroll();
 }
 loadGuide();
-window.addEventListener("hashchange", scrollToRequestedSection);
+window.addEventListener("hashchange", scheduleSectionScroll);
+window.addEventListener("load", scheduleSectionScroll);
+window.addEventListener("pageshow", scheduleSectionScroll);
