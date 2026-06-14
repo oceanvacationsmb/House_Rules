@@ -61,7 +61,10 @@ function formatLineHtml(line){
 
 const STORAGE_KEY = "oceanPropertyGuidesV28";
 
-function getData(){try{const saved=localStorage.getItem(STORAGE_KEY);if(saved)return JSON.parse(saved);}catch(e){} return PROPERTY_GUIDES;}
+function getData(){
+  try{localStorage.removeItem(STORAGE_KEY);}catch(e){}
+  return PROPERTY_GUIDES;
+}
 function getPropertySlug(){if(window.PROPERTY_SLUG)return window.PROPERTY_SLUG;const params=new URLSearchParams(window.location.search);return params.get("p")||Object.keys(getData())[0];}
 function setListingImage(imageUrl){if(!imageUrl)return;const el=document.getElementById("listingImage");if(el)el.style.backgroundImage=`linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.12)), url("${imageUrl}")`;}
 async function tryLoadGuestyPreviewImage(guestyUrl){if(!guestyUrl)return;const cached=sessionStorage.getItem("guestyPreviewImage:"+guestyUrl);if(cached){setListingImage(cached);return;}try{const response=await fetch("https://api.microlink.io/?url="+encodeURIComponent(guestyUrl));if(!response.ok)return;const result=await response.json();const imageUrl=result&&result.data&&result.data.image&&result.data.image.url;if(imageUrl){sessionStorage.setItem("guestyPreviewImage:"+guestyUrl,imageUrl);setListingImage(imageUrl);}}catch(e){console.log("Preview image could not be loaded automatically.",e);}}
