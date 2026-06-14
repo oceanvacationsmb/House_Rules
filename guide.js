@@ -59,7 +59,9 @@ function formatLineHtml(line){
   return safe;
 }
 
-function getData(){try{const saved=localStorage.getItem("oceanPropertyGuidesV8ButtonsCleanText");if(saved)return JSON.parse(saved);}catch(e){} return PROPERTY_GUIDES;}
+const STORAGE_KEY = "oceanPropertyGuidesV28";
+
+function getData(){try{const saved=localStorage.getItem(STORAGE_KEY);if(saved)return JSON.parse(saved);}catch(e){} return PROPERTY_GUIDES;}
 function getPropertySlug(){if(window.PROPERTY_SLUG)return window.PROPERTY_SLUG;const params=new URLSearchParams(window.location.search);return params.get("p")||Object.keys(getData())[0];}
 function setListingImage(imageUrl){if(!imageUrl)return;const el=document.getElementById("listingImage");if(el)el.style.backgroundImage=`linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.12)), url("${imageUrl}")`;}
 async function tryLoadGuestyPreviewImage(guestyUrl){if(!guestyUrl)return;const cached=sessionStorage.getItem("guestyPreviewImage:"+guestyUrl);if(cached){setListingImage(cached);return;}try{const response=await fetch("https://api.microlink.io/?url="+encodeURIComponent(guestyUrl));if(!response.ok)return;const result=await response.json();const imageUrl=result&&result.data&&result.data.image&&result.data.image.url;if(imageUrl){sessionStorage.setItem("guestyPreviewImage:"+guestyUrl,imageUrl);setListingImage(imageUrl);}}catch(e){console.log("Preview image could not be loaded automatically.",e);}}
@@ -67,9 +69,16 @@ async function tryLoadGuestyPreviewImage(guestyUrl){if(!guestyUrl)return;const c
 function sectionClass(section){
   const title=(section.title||'').toLowerCase();
   const details=(section.details||'').toLowerCase();
-  if(title.includes('basic house rules') || title.includes('pool') || title.includes('checkout') || title.includes('supplies') || title.includes('trash')) return 'wide';
+  if(title.includes('basic house rules') || title.includes('responsibilities') || title.includes('pool') || title.includes('checkout') || title.includes('supplies') || title.includes('trash') || title.includes('parking') || title.includes('golf carts')) return 'wide';
   if(details.length>520) return 'wide';
   return '';
+}
+
+function sectionSlug(title){
+  return String(title || "section")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 function shouldShowSection(section){
@@ -79,43 +88,79 @@ function shouldShowSection(section){
   return true;
 }
 
-function badge(icon,label){return `<span class="tag">${icon}<span>${escapeHtml(label)}</span></span>`;}
-function getTags(section){
+function sectionOrder(section){
   const title=(section.title||'').toLowerCase();
-  const details=(section.details||'').toLowerCase();
-  const tags=[];
-  if(title.includes('basic house rules')){
-    if(/25 years/.test(details)) tags.push(badge('🔞','25+ to book'));
-    else if(/21 years/.test(details)) tags.push(badge('🔞','21+ to book'));
-    if(/no smoking/.test(details)) tags.push(badge('🚭','No smoking'));
-    if(/no pets|no animals/.test(details)) tags.push(badge('🐾','No pets'));
-    if(/no parties/.test(details)) tags.push(badge('🎉','No parties'));
-    if(/no loud music/.test(details)) tags.push(badge('🔇','Quiet hours'));
+  if(title.includes('basic house rules')) return 10;
+  if(title.includes('responsibilities')) return 15;
+  if(title.includes('report issues')) return 18;
+  if(title.includes('supplies provided')) return 20;
+  if(title.includes('parking')) return 30;
+  if(title.includes('golf carts')) return 35;
+  if(title.includes('elevator') || title.includes('stairs')) return 40;
+  if(title.includes('pool') || title.includes('amenities')) return 50;
+  if(title.includes('ac') || title.includes('heat') || title.includes('refrigerator')) return 60;
+  if(title.includes('garbage disposal') || title.includes('toilets')) return 70;
+  if(title.includes('forgot')) return 999;
+  return 100;
+}
+
+function normalizeSectionTitle(section){
+  if((section.title||'').toLowerCase().includes('forgot')) {
+    return {...section, title: 'Forgot something?'};
   }
-  if(title.includes('pool')){
-    if(/private/.test(details)) tags.push(badge('🏊','Private pool'));
-    else if(/shared/.test(details)) tags.push(badge('🏊','Shared pool'));
-    if(/not heated/.test(details)) tags.push(badge('❄️','Not heated'));
-    if(/no diving/.test(details)) tags.push(badge('🚫','No diving'));
-    if(/no glass/.test(details)) tags.push(badge('🥤','No glass'));
-    if(/no food/.test(details)) tags.push(badge('🍽️','No food'));
-    if(/no lifeguard/.test(details)) tags.push(badge('⚠️','No lifeguard'));
+  return section;
+}
+
+function normalizeParkingSection(guide, section){
+  if(!(section.title || '').toLowerCase().includes('parking') || !guide.parkingSpaces) return section;
+  const parkingText = String(guide.parkingSpaces).trim();
+  const details = String(section.details || '').trim();
+  if(!details) return {...section, details: parkingText};
+
+  const lines = details.split('\n').map(line => line.trim()).filter(Boolean);
+  let firstLine = lines[0] || '';
+  let remaining = lines.slice(1);
+  const compact = value => String(value || "")
+    .toLowerCase()
+    .replace(/\bthe\b/g, "")
+    .replace(/[^a-z0-9]+/g, "");
+  const compactParking = compact(parkingText);
+  const compactFirst = compact(firstLine);
+
+  if(firstLine.toLowerCase().startsWith(parkingText.toLowerCase())){
+    firstLine = firstLine.slice(parkingText.length).replace(/^[\s.:-]+/, '').trim();
+    if(firstLine) remaining.unshift(firstLine);
+  } else if(compactFirst === compactParking){
+    remaining = lines.slice(1);
+  } else if(!details.toLowerCase().includes(parkingText.toLowerCase())){
+    remaining = lines;
   }
-  if(title.includes('parking')){
-    if(/\b(\d+)\b/.test(details)) tags.push(badge('🚗','See parking details'));
-    if(/towed|towing/.test(details)) tags.push(badge('🚧','Towing enforced'));
+
+  return {...section, details: [parkingText, ...remaining].join('\n')};
+}
+
+function golfCartSection(){
+  return {
+    title: 'Golf Carts',
+    icon: '🛺',
+    color: 'green',
+    details: 'Golf carts allowed.\nPlease arrange delivery for after arrival and pickup at least 2 hours before departure.\nIf the golf cart is delivered too early, picked up late, or left improperly, it may be towed at the guest expense.\nGuests are responsible for securing the golf cart during the stay.\nOcean Vacations is not responsible for theft, loss, or damage to golf carts.'
+  };
+}
+
+function getGuideSections(guide){
+  const sections = (guide.sections || []).slice();
+  if(guide.golfCartsAllowed && !sections.some(section => (section.title || '').toLowerCase().includes('golf carts'))){
+    sections.push(golfCartSection());
   }
-  if(title.includes('elevator')){
-    if(/\$150/.test(details)) tags.push(badge('🛗','$150 add-on'));
-    if(/must be able to climb stairs/.test(details)) tags.push(badge('🪜','Stairs required'));
-  }
-  if(title.includes('trash')){
-    if(/fee/.test(details)) tags.push(badge('🗑️','Bag all trash'));
-  }
-  if(title.includes('supplies')){
-    tags.push(badge('🧺','Startup supply only'));
-  }
-  return tags.join('');
+  return sections;
+}
+
+function isCalloutLine(line, sectionTitle){
+  const title = String(sectionTitle || '').toLowerCase();
+  if(!title.includes('trash')) return false;
+  if(/please do not block the trash carts/i.test(line)) return false;
+  return /roll carts|push carts|place carts at the curb|please do not block the trash carts|return carts from the street|return them by|return by/i.test(line);
 }
 
 function renderContent(section){
@@ -129,22 +174,50 @@ function renderContent(section){
   let html='';
   if(lead) html += `<p class="card-lead">${formatLineHtml(lead)}</p>`;
   if(items.length){
-    html += `<ul class="info-list">${items.map(line=>`<li>${formatLineHtml(line)}</li>`).join('')}</ul>`;
+    html += `<ul class="info-list">${items.map(line=>isCalloutLine(line, section.title) ? `<li class="line-callout">${formatLineHtml(line)}</li>` : `<li>${formatLineHtml(line)}</li>`).join('')}</ul>`;
   }
   return html;
 }
 
 function makeSection(section){
   const klass=sectionClass(section);
-  const tags=getTags(section);
-  return `<article class="info-card ${section.color||''} ${klass}">
+  return `<article class="info-card ${section.color||''} ${klass}" id="${sectionSlug(section.title)}">
     <div class="card-head">
       <div class="card-icon">${section.icon||'📌'}</div>
       <div class="card-title">${escapeHtml(section.title)}</div>
     </div>
-    ${tags?`<div class="tag-row">${tags}</div>`:''}
     <div class="card-content">${renderContent(section)}</div>
   </article>`;
+}
+
+function renderGuideOverview(guide, sections){
+  const main = document.querySelector("main");
+  if(!main) return;
+
+  const existingOverview = main.querySelector(".guide-overview");
+  if(existingOverview) existingOverview.remove();
+  const existingNav = main.querySelector(".section-nav");
+  if(existingNav) existingNav.remove();
+
+  const navItems = sections
+    .map((section) => `<a href="#${sectionSlug(section.title)}">${escapeHtml(section.title)}</a>`)
+    .join("");
+
+  main.insertAdjacentHTML("afterbegin", `
+    <section class="guide-overview" aria-label="Guest guide overview">
+      <div>
+        <span class="overline">Booked guest guide</span>
+        <h2>Welcome to ${escapeHtml(guide.propertyName || "your Ocean Vacations stay")}</h2>
+        <p>Please review the details below before arrival. Access codes and private Wi-Fi details are sent separately, so this page stays safe to share.</p>
+      </div>
+      <div class="support-card">
+        <span>Need help?</span>
+        <strong>Ocean Vacations</strong>
+        <a href="mailto:oceanvacationsmb@gmail.com">oceanvacationsmb@gmail.com</a>
+      </div>
+    </section>
+    <nav class="section-nav" aria-label="Guide sections">${navItems}</nav>
+  `);
 }
 
 function showMissingProperty(){
@@ -158,12 +231,44 @@ function loadGuide(){
   if(!data||!data[slug]){showMissingProperty();return;}
   const guide=data[slug];
   document.title=`${guide.propertyName} | House Rules`;
-  document.getElementById("propertyName").textContent=guide.propertyName||"House Rules";
+  document.getElementById("propertyName").textContent="Guest Welcome Guide";
+  const brandName=document.querySelector(".brand-name");
+  if(brandName) brandName.textContent="";
+  const miniLabel=document.querySelector(".mini-label");
+  if(miniLabel) miniLabel.textContent="";
+  const quickGrid=document.querySelector(".quick-grid.quick-times");
+  const introCard=document.querySelector(".intro-card");
+  const titleWrap=document.querySelector(".title-wrap");
+  if(introCard && titleWrap && introCard.previousElementSibling !== titleWrap){
+    titleWrap.insertAdjacentElement("afterend", introCard);
+  }
+  const quickCards=document.querySelectorAll(".quick-grid.quick-times .quick-card");
+  if(quickCards[0]){
+    const checkInText=quickCards[0].querySelector("p");
+    if(checkInText) checkInText.textContent="Starts at 4:00 PM";
+    const checkInNote=quickCards[0].querySelector(".quick-note");
+    if(checkInNote) checkInNote.textContent="Early check-in and luggage drop-off are unavailable. Please do not arrive before 4:00 PM.";
+    else quickCards[0].querySelector("div")?.insertAdjacentHTML("beforeend", '<span class="quick-note">Early check-in and luggage drop-off are unavailable. Please do not arrive before 4:00 PM.</span>');
+  }
+  if(quickCards[1]){
+    const checkOutText=quickCards[1].querySelector("p");
+    if(checkOutText) checkOutText.textContent="10:00 AM";
+    const checkOutNote=quickCards[1].querySelector(".quick-note");
+    if(checkOutNote) checkOutNote.textContent="No late checkout. Our cleaning and maintenance team will arrive at the property at 10:00 AM.";
+    else quickCards[1].querySelector("div")?.insertAdjacentHTML("beforeend", '<span class="quick-note">No late checkout. Our cleaning and maintenance team will arrive at the property at 10:00 AM.</span>');
+  }
+  document.querySelector(".arrival-note")?.remove();
+  const introText=document.querySelector(".intro-card p");
+  if(introText) introText.textContent="This page includes the house rules and property-use instructions for this property. Private access details, door codes, and Wi-Fi information will be sent 48 hours before arrival at 4:00 PM ET.";
   const listing=document.getElementById("listingLink");
   if(listing)listing.href=guide.guestyUrl||"#";
   if(guide.heroImage)setListingImage(guide.heroImage);
   if(guide.guestyUrl)tryLoadGuestyPreviewImage(guide.guestyUrl);
-  const sections=(guide.sections||[]).filter(shouldShowSection);
+  const sections=getGuideSections(guide)
+    .filter(shouldShowSection)
+    .map(section => normalizeParkingSection(guide, section))
+    .map(normalizeSectionTitle)
+    .sort((a,b)=>sectionOrder(a)-sectionOrder(b));
   document.getElementById("sections").innerHTML=sections.map(makeSection).join('');
 }
 loadGuide();
