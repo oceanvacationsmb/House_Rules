@@ -3205,7 +3205,8 @@ const PROPERTY_GUIDES = {
         "title": "Parking",
         "icon": "🚗",
         "color": "teal",
-        "details": "Parking Information — Unit B\nParking for Unit B is located in the long covered driveway.\nPlease follow the signs displayed on the building for proper parking guidance.\nDo not block the pool gate or the elevator access for Unit A.\nDo not block or park on the neighbor’s driveway.\nStreet parking is not allowed — towing is strictly enforced by the City.\nBikers and trailers are welcome.\nAdditional parking is not available.\nOverflow parking is not available."
+        "details": "Parking Information — Unit B\nParking for Unit B is located in the long covered driveway.\nPlease follow the signs displayed on the building for proper parking guidance.\nDo not block the pool gate or the elevator access for Unit A.\nDo not block or park on the neighbor’s driveway.\nStreet parking is not allowed — towing is strictly enforced by the City.\nBikers and trailers are welcome.\nAdditional parking is not available.\nOverflow parking is not available.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759941000/production/68d5ff6bea1895d9005ea411/g4yduio6ipixbhuuzvag.jpg"
       },
       {
         "title": "Pool / Amenities",
@@ -3651,7 +3652,8 @@ const PROPERTY_GUIDES = {
         "title": "Parking",
         "icon": "🚗",
         "color": "teal",
-        "details": "Parking Information — Unit A\nParking for Unit A is located on the left, middle, and the long uncovered driveway on the right side of the building.\nPlease do not block or park on the neighbor’s driveway.\nStreet parking is not allowed — towing is strictly enforced by the City.\nBikers and trailers are welcome.\nAdditional parking is not available.\nOverflow parking is not available."
+        "details": "Parking Information — Unit A\nParking for Unit A is located on the left, middle, and the long uncovered driveway on the right side of the building.\nPlease do not block or park on the neighbor’s driveway.\nStreet parking is not allowed — towing is strictly enforced by the City.\nBikers and trailers are welcome.\nAdditional parking is not available.\nOverflow parking is not available.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759942253/production/68d5ff6bea1895d9005ea411/zc9aoxpgjjeuprlbcabn.jpg"
       },
       {
         "title": "Pool / Amenities",
@@ -3767,7 +3769,8 @@ const PROPERTY_GUIDES = {
         "title": "Parking",
         "icon": "🚗",
         "color": "teal",
-        "details": "Parking Information — Unit B\nParking for Unit B is located in the long covered driveway.\nPlease follow the signs displayed on the building for proper parking guidance.\nDo not block the pool gate or the elevator access for Unit A.\nDo not block or park on the neighbor’s driveway.\nStreet parking is not allowed — towing is strictly enforced by the City.\nBikers and trailers are welcome.\nAdditional parking is not available.\nOverflow parking is not available."
+        "details": "Parking Information — Unit B\nParking for Unit B is located in the long covered driveway.\nPlease follow the signs displayed on the building for proper parking guidance.\nDo not block the pool gate or the elevator access for Unit A.\nDo not block or park on the neighbor’s driveway.\nStreet parking is not allowed — towing is strictly enforced by the City.\nBikers and trailers are welcome.\nAdditional parking is not available.\nOverflow parking is not available.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759941995/production/68d5ff6bea1895d9005ea411/xefjm4vbczo8hvgdnkyh.jpg"
       },
       {
         "title": "Pool / Amenities",
