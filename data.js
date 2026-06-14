@@ -92,7 +92,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -208,7 +208,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -318,7 +318,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -428,7 +428,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -538,7 +538,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -654,7 +654,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -764,7 +764,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -880,7 +880,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -990,7 +990,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1112,7 +1112,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1234,7 +1234,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1356,7 +1356,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1478,7 +1478,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1594,7 +1594,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1710,7 +1710,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1826,7 +1826,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -1936,7 +1936,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2046,7 +2046,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2156,7 +2156,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2260,7 +2260,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2322,7 +2322,8 @@ const PROPERTY_GUIDES = {
         "title": "Trash / Garbage",
         "icon": "🗑️",
         "color": "yellow",
-        "details": "Roll trash carts to curb Sunday after 6 PM and back into garage Monday morning.\nIf checkout is Monday, host may roll back;\nguest still places at curb Sunday after 6 PM.\nCity schedule may change.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day."
+        "details": "Please roll the trash carts to the curb as shown in the attached image.\nTrash carts should be placed at the curb Sunday after 6:00 PM only.\nPlease roll the carts back into the garage Monday morning.\nIf you are checking out on Monday, no worries - we will take care of rolling them back.\nPlease make sure the carts are placed at the curb Sunday after 6:00 PM before you leave.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759941865/production/68d5ff6bea1895d9005ea411/m8azzhkibzaqyckkhp8l.jpg"
       },
       {
         "title": "Garbage Disposal / Toilets",
@@ -2370,7 +2371,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2480,7 +2481,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2590,7 +2591,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2707,7 +2708,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2824,7 +2825,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -2941,7 +2942,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3051,7 +3052,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3161,7 +3162,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3278,7 +3279,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3388,7 +3389,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3498,7 +3499,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3608,7 +3609,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3725,7 +3726,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3836,7 +3837,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -3946,7 +3947,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -4056,7 +4057,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -4166,7 +4167,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
@@ -4276,7 +4277,7 @@ const PROPERTY_GUIDES = {
         "title": "Forgot something?",
         "icon": "??",
         "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure. We will transfer the item(s) to a third-party shipper who will contact you directly to collect payment for packing, shipping, and handling. Minimum charge is $35 regardless of size, before shipping and boxing cost. Thank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Checkout Instructions",
