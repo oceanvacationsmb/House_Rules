@@ -426,6 +426,21 @@ main {
   margin: 0;
 }
 
+.section-photo {
+  margin: 0 0 14px;
+}
+
+.section-photo img {
+  display: block;
+  width: min(520px, 100%);
+  height: auto;
+  max-height: 360px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(12, 54, 78, 0.12);
+}
+
 .card-lead {
   margin: 0 0 10px;
   color: #2c4354;

@@ -210,12 +210,14 @@ function renderContent(section){
 
 function makeSection(section){
   const klass=sectionClass(section);
+  const imageUrl=section.imageUrl ? String(section.imageUrl).trim() : "";
+  const imageHtml=imageUrl ? `<figure class="section-photo"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(section.title)} photo" loading="lazy"></figure>` : "";
   return `<article class="info-card ${section.color||''} ${klass}" id="${sectionSlug(section.title)}">
     <div class="card-head">
       <div class="card-icon">${section.icon||'📌'}</div>
       <div class="card-title">${escapeHtml(section.title)}</div>
     </div>
-    <div class="card-content">${renderContent(section)}</div>
+    <div class="card-content">${imageHtml}${renderContent(section)}</div>
   </article>`;
 }
 

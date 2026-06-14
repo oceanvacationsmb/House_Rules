@@ -2658,7 +2658,8 @@ const PROPERTY_GUIDES = {
         "title": "Trash / Garbage",
         "icon": "🗑️",
         "color": "yellow",
-        "details": "The trash carts are located in the pool area.\nWalk downstairs and turn left; you will see the carts on the left side by the fence.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day."
+        "details": "The trash carts are located in the pool area.\nWalk downstairs and turn left; you will see the carts on the left side by the fence.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759940242/production/68d5ff6bea1895d9005ea411/ku079ht9huy7z2x24qs5.jpg"
       },
       {
         "title": "Garbage Disposal / Toilets",
@@ -2774,7 +2775,8 @@ const PROPERTY_GUIDES = {
         "title": "Trash / Garbage",
         "icon": "🗑️",
         "color": "yellow",
-        "details": "The trash carts are located in the pool area.\nWalk downstairs and turn left; you will see the carts on the left side by the fence.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day."
+        "details": "The trash carts are located in the pool area.\nWalk downstairs and turn left; you will see the carts on the left side by the fence.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759940242/production/68d5ff6bea1895d9005ea411/ku079ht9huy7z2x24qs5.jpg"
       },
       {
         "title": "Garbage Disposal / Toilets",
@@ -2890,7 +2892,8 @@ const PROPERTY_GUIDES = {
         "title": "Trash / Garbage",
         "icon": "🗑️",
         "color": "yellow",
-        "details": "The trash carts are located in the pool area.\nWalk downstairs and turn right; you will see the carts on the left side by the fence.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day."
+        "details": "The trash carts are located in the pool area.\nWalk downstairs and turn right; you will see the carts on the left side by the fence.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day.",
+        "imageUrl": "https://assets.guesty.com/image/upload/v1759940242/production/68d5ff6bea1895d9005ea411/ku079ht9huy7z2x24qs5.jpg"
       },
       {
         "title": "Garbage Disposal / Toilets",
