@@ -128,12 +128,19 @@ function sectionShortcutLabel(title){
   return String(title || "Section");
 }
 
-function scrollToHashTarget(){
-  if(!window.location.hash)return;
-  const rawHash=decodeURIComponent(window.location.hash.slice(1)).trim();
-  if(!rawHash)return;
-  const targetId=sectionSlug(rawHash);
-  const target=document.getElementById(targetId) || document.getElementById(rawHash);
+function requestedSection(){
+  const params=new URLSearchParams(window.location.search);
+  const fromQuery=params.get("section") || params.get("anchor") || params.get("jump");
+  if(fromQuery)return fromQuery.trim();
+  if(!window.location.hash)return "";
+  return decodeURIComponent(window.location.hash.slice(1)).trim();
+}
+
+function scrollToRequestedSection(){
+  const targetName=requestedSection();
+  if(!targetName)return;
+  const targetId=sectionSlug(targetName);
+  const target=document.getElementById(targetId) || document.getElementById(targetName);
   if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
@@ -339,7 +346,7 @@ function loadGuide(){
     .sort((a,b)=>sectionOrder(a)-sectionOrder(b));
   renderSectionShortcuts(sections);
   document.getElementById("sections").innerHTML=sections.map(makeSection).join('');
-  setTimeout(scrollToHashTarget, 80);
+  setTimeout(scrollToRequestedSection, 80);
 }
 loadGuide();
-window.addEventListener("hashchange", scrollToHashTarget);
+window.addEventListener("hashchange", scrollToRequestedSection);
