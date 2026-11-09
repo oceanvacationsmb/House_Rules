@@ -4302,7 +4302,7 @@ const PROPERTY_GUIDES = {
     "address": "",
     "unit": "1670",
     "heroImage": "",
-    "parkingSpaces": "2 parking spots with tags/passes provided",
+    "parkingSpaces": "3 parking spots with tags/passes provided",
     "minAge": "25",
     "sections": [
       {
@@ -4321,7 +4321,7 @@ const PROPERTY_GUIDES = {
         "title": "Parking",
         "icon": "🚗",
         "color": "teal",
-        "details": "PARKING POLICY:\nParking is limited to 2 cars ONLY.\nOversized vehicles are not allowed.\n2 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are allowed. No trailers or oversized vehicles.\nAdditional parking is not available.\nOverflow parking is not available."
+        "details": "PARKING POLICY:\nParking is limited to 3 cars ONLY.\nOversized vehicles are not allowed.\n3 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are NOT allowed. No trailers or oversized vehicles.\nAdditional parking is not available.\nOverflow parking is not available."
       },
       {
         "title": "Pool / Amenities",
@@ -4334,12 +4334,6 @@ const PROPERTY_GUIDES = {
         "icon": "🛗",
         "color": "purple",
         "details": "There is an elevator available for guest use. The condo is located on the 6th floor."
-      },
-      {
-        "title": "BBQ Grill",
-        "icon": "🔥",
-        "color": "orange",
-        "details": "Per HOA rules the use of a BBQ grill in this property is prohibited."
       },
       {
         "title": "Trash / Garbage",
@@ -4378,18 +4372,6 @@ const PROPERTY_GUIDES = {
         "details": "The property is professionally cleaned before every stay.\nLinens and towels are laundered and replaced regularly, but they may not be brand-new.\nNormal wear and tear may be present, especially during busy seasons with back-to-back reservations.\nVacation rental wear and tear may be visible on walls, carpets, furniture, fixtures, and other areas of the property.\nWe do our best to maintain each property with the limited time available between stays, but repairs or touch-ups are not always possible before the next arrival.\nGuests should not expect the property to look or feel brand new."
       },
       {
-        "title": "TV / Streaming Rules",
-        "icon": "📺",
-        "color": "orange",
-        "details": "Smart TV with apps only (no local or premium channels). Do not purchase or upgrade any streaming services. Upgrade fee applies. Please log out of your accounts before checkout."
-      },
-      {
-        "title": "Property Notes",
-        "icon": "📌",
-        "color": "violet",
-        "details": "Ice machines on 2nd and 10th floors."
-      },
-      {
         "title": "Refunds and Cancellations",
         "icon": "??",
         "color": "navy",
@@ -4405,13 +4387,7 @@ const PROPERTY_GUIDES = {
         "title": "Checkout Instructions",
         "icon": "✅",
         "color": "gray",
-        "details": "Checkout Instructions\nCheckout time is 10:00 AM.\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\n\nIf you logged into any streaming services on the Smart TVs, log out before departure.\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
-      },
-      {
-        "title": "Laundry Facilities",
-        "icon": "??",
-        "color": "green",
-        "details": "The laundry room is located on the 4th floor."
+        "details": "Checkout Instructions\nCheckout time is 10:00 AM.\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\nLeave all the wristbands on the kitchen counter.\n\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Report Issues",
