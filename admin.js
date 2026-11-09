@@ -3,7 +3,7 @@ let data,currentSlug;
 let cloudEnabled=false,publishedBase={},publishQueue=Promise.resolve(),publishTimer,pendingSaves=0,saveFailed=false;
 let publisher=null,adminShell='';
 function save(){}
-function status(message,error=false){let el=document.getElementById('publishStatus');if(!el){el=document.createElement('p');el.id='publishStatus';el.setAttribute('role','status');document.querySelector('.admin-head').append(el);}el.textContent=message;el.style.color=error?'#b91c1c':'#166534';}
+function status(message,error=false){let el=document.getElementById('publishStatus');if(!el){el=document.createElement('p');el.id='publishStatus';el.setAttribute('role','status');document.querySelector('.admin-head').append(el);}el.textContent=message;el.style.cssText='background:#fff;padding:14px 18px;border-radius:12px;line-height:1.5';el.style.color=error?'#b91c1c':'#166534';}
 function queuePublish(slug,property){
  if(!cloudEnabled)return;
  pendingSaves++;status('Saving changes to GitHub…');
