@@ -36,3 +36,10 @@ test('GitHub rejection never reports success',async()=>{
  const publisher=new GitHubGuidePublisher({token:'invalid-test',request:async()=>({ok:false,status:403})});
  await assert.rejects(publisher.save('1670',property,property),/denied access/);
 });
+test('default browser fetch is not invoked with the publisher as receiver',async()=>{
+ const originalFetch=global.fetch;
+ let receiver;
+ global.fetch=function(){receiver=this;return Promise.resolve(response(file({'1670':property})));};
+ try{const publisher=new GitHubGuidePublisher({token:'test-only'});await publisher.read();assert.notEqual(receiver,publisher);}
+ finally{global.fetch=originalFetch;}
+});
