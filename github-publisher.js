@@ -1,6 +1,6 @@
 (function(root){
   class GitHubGuidePublisher {
-    constructor({token,request=fetch}){this.token=token;this.request=request;}
+    constructor({token,request=(...args)=>fetch(...args)}){this.token=token;this.request=request;}
     async github(method,body){
       const url='https://api.github.com/repos/oceanvacationsmb/House_Rules/contents/data.js';
       const response=await this.request(method==='GET'?url+'?ref=main':url,{
