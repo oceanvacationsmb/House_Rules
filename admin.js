@@ -17,7 +17,7 @@ function renderLinks(){
 
 function renderList(){
   document.getElementById('propertyList').innerHTML=props().map(p=>`<button class="${p.slug===currentSlug?'active':''}" data-slug="${esc(p.slug)}"><b>${esc(p.propertyName)}</b><small>${esc(p.page)} - ${esc(p.address)}</small></button>`).join('');
-  document.querySelectorAll('#propertyList button').forEach(b=>b.onclick=()=>{currentSlug=b.dataset.slug;render();});
+  document.querySelectorAll('#propertyList button').forEach(b=>b.onclick=()=>{updateCurrent(false);currentSlug=b.dataset.slug;render();});
 }
 
 function renderEditor(){
@@ -66,8 +66,8 @@ function renderEditor(){
   ed.querySelector('#saveBtn').onclick=()=>updateCurrent(true);
   ed.querySelector('#exportBtn').onclick=()=>{updateCurrent(false);download('data.js','const PROPERTY_GUIDES = '+JSON.stringify(data,null,2)+';\n');};
   ed.querySelector('#resetBtn').onclick=()=>{if(confirm('Clear local saved edits?')){localStorage.removeItem(STORAGE_KEY);data=clone(PROPERTY_GUIDES);currentSlug=props()[0].slug;render();}};
-  ed.querySelector('#addSec').onclick=()=>{p.sections.push({title:'New Section',icon:'📌',color:'gray',details:''});renderEditor();};
-  ed.querySelectorAll('.removeSec').forEach(btn=>btn.onclick=e=>{const i=+e.target.closest('.edit-section').dataset.i;p.sections.splice(i,1);renderEditor();});
+  ed.querySelector('#addSec').onclick=()=>{updateCurrent(false);p.sections.push({title:'New Section',icon:'📌',color:'gray',details:''});save();renderEditor();};
+  ed.querySelectorAll('.removeSec').forEach(btn=>btn.onclick=e=>{const i=+e.target.closest('.edit-section').dataset.i;updateCurrent(false);p.sections.splice(i,1);save();renderEditor();});
 }
 
 function updateCurrent(showAlert){
@@ -85,7 +85,7 @@ function updateCurrent(showAlert){
     details:div.querySelector('.secDetails').value
   }));
   save();
-  if(showAlert)alert('Saved. Open the local page link to review.');
+  if(showAlert)alert('Saved in this browser. Refresh the property page to see your edits. To publish for other devices and guests, export data.js and upload it to GitHub.');
   renderLinks();
   renderList();
 }

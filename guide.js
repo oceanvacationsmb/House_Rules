@@ -374,3 +374,9 @@ loadGuide();
 window.addEventListener("hashchange", scheduleSectionScroll);
 window.addEventListener("load", scheduleSectionScroll);
 window.addEventListener("pageshow", scheduleSectionScroll);
+
+// Keep open previews synchronized with saves made in the admin tab.
+let previewSavedData=localStorage.getItem(STORAGE_KEY);
+function refreshSavedPreview(){const latest=localStorage.getItem(STORAGE_KEY);if(latest!==previewSavedData)window.location.reload();}
+window.addEventListener("storage",event=>{if(event.key===STORAGE_KEY)refreshSavedPreview();});
+window.addEventListener("focus",refreshSavedPreview);
