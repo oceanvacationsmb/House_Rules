@@ -445,6 +445,110 @@ const PROPERTY_GUIDES = {
     ],
     "golfCartsAllowed": true
   },
+  "1670": {
+    "propertyName": "1670",
+    "slug": "1670",
+    "page": "1670.html",
+    "guestyUrl": "https://oceanvacationsmb.guestybookings.com/properties/6ad57689b3d401003124f784",
+    "address": "",
+    "unit": "1670",
+    "heroImage": "",
+    "parkingSpaces": "3 parking spots with tags/passes provided",
+    "minAge": "25",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": "The booking person must be 25 years or older to book and stay, must be present at check-in, remain for the entire stay, and is responsible for any damages or violations.\nYoung children must be supervised by an adult at all times.\nNo smoking.\nPlease do not smoke inside the property. Smoking inside the property may result in a charge of $300 per room.\nNo pets or animals.\nIf evidence of an animal or pet is found inside the property, it may result in a deep cleaning charge including odor and hair removal.\nNo fireworks.\nNo parties.\nNo loud music.\nDo not exceed the number of guests listed on your reservation.\nDo not remove property items, such as bedspreads, pillows, chairs, pots, pans, dishes, glasses, or silverware, from the home or take them to the beach or other properties.\nViolation of any house rule may result in immediate cancellation of your reservation and removal from the property without a refund.\n"
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": "All guests are advised to secure their personal items, vehicles, and valuables during the stay.\nOcean Vacations is not responsible for loss, theft, stolen property, damages, accidents, or injury.\nGuests are responsible for returning the property in the same condition it was in at check-in.\nCleaning is not required before departure; however, trash removal and the basic checkout steps are required."
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": "PARKING POLICY:\nParking is limited to 3 cars ONLY.\nOversized vehicles are not allowed.\n3 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are NOT allowed. No trailers or oversized vehicles.\nAdditional parking is not available.\nOverflow parking is not available."
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": "The pool is shared with other guests in the building.\nPool hours: 9 a.m. – 10 p.m. (March 15 – November 15).\nNo alcoholic beverages or food are allowed in the pool area.\nNo glass in or around the pool — please use plastic cups.\nNo speakers or loud music in the pool area.\nNo pushing, running, jumping, or diving.\nChildren and infants must be supervised at all times.\nSwim at your own risk; there is no lifeguard on duty.\nThe pool is not heated, and we do not have the ability to heat the pool.\nDo not touch or change the pool equipment settings.\nThe pool maintenance service is managed by the HOA, and we are not responsible for the pool service schedule or availability.\nIce Machines: Available on the 2nd and 10th floors."
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": "There is an elevator available for guest use. The condo is located on the 6th floor."
+      },
+      {
+        "title": "Trash / Garbage",
+        "icon": "🗑️",
+        "color": "yellow",
+        "details": "The trash chute is located down the hallway. Household garbage only!"
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": "Garbage disposal: Please use only soft food when operating the garbage disposal.\nDo not use it for bones, glass, metal, or any hard items.\nMisuse may result in a $50–$220 fee, depending on whether the disposal can be reset or needs replacement.\nToilets: Flush toilet paper only.\nA plunger is provided.\nMisuse may result in a $50–$220 service fee."
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": "Please keep the thermostat between 70–72°F in AUTO mode.\nSetting the thermostat at or below 70°F may cause the HVAC system to freeze.\nIf AC logs show the thermostat was set at or below 70°F, guests may be held responsible for resulting HVAC maintenance, repair, or defrosting fees.\nThe refrigerator may take 12+ hours to reach full cooling when first stocked or empty."
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": "Supplies Provided (startup only):\nFull linens\n1 set of towels per guest (bath + hand)\n1 paper towel roll\n2 toilet paper rolls in each bathroom\nMini soap/shampoo\nA few trash bags\nA few dishwasher pods\nA few laundry detergent pods, if the property has in-unit laundry\nKeurig coffee maker, unless otherwise noted (please bring your own pods)\nWe do not provide beach gear, beach towels, pool items, extra linens, or daily housekeeping.\nTowels are for in-house use only and should not be used as makeup removers.\nPlease bring extra toiletries, detergent/pods if needed, trash bags, spices, paper products, and anything else needed for your stay."
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": "The property receives regular professional pest-control treatments.\nThis is a coastal vacation area, and occasional bugs may still appear.\nPest control service cannot be refused by the guest.\nPest control, including HOA service where applicable, has a unique door code and may enter at any time to provide service.\nPlease keep all doors and windows closed.\nIf pests, insects, or animals enter due to doors or windows being left open, the guest may be responsible for professional removal costs."
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": "The property is professionally cleaned before every stay.\nLinens and towels are laundered and replaced regularly, but they may not be brand-new.\nNormal wear and tear may be present, especially during busy seasons with back-to-back reservations.\nVacation rental wear and tear may be visible on walls, carpets, furniture, fixtures, and other areas of the property.\nWe do our best to maintain each property with the limited time available between stays, but repairs or touch-ups are not always possible before the next arrival.\nGuests should not expect the property to look or feel brand new."
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": "We advise guests to purchase trip insurance if they want protection for unexpected travel changes. Trip insurance is only available through Airbnb, Vrbo, or a third-party provider, and is not sold through Ocean Vacations.\nAt the time of booking, guests review the cancellation policy and agree to those terms. All bookings are honored based on the cancellation policy attached to the reservation.\nRefunds or compensation are not provided for missed spots during cleaning, mechanical breakdowns, leaks, damaged or broken items, weather, construction, internet or utility interruptions, HOA/community closures, or other unforeseen issues.\nReport any issue as soon as possible during the stay so Ocean Vacations can work to address it as quickly as possible."
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": "Checkout Instructions\nCheckout time is 10:00 AM.\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\nLeave all the wristbands on the kitchen counter.\n\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": "Please report any property issues immediately so we can work to address them as soon as possible.\nEmergency property issues are prioritized first.\nFor any life-safety, medical, fire, police, or other emergency not related to a property maintenance issue, call 911 immediately."
+      }
+    ],
+    "golfCartsAllowed": false
+  },
   "2000": {
     "propertyName": "2000",
     "slug": "2000",
@@ -4293,109 +4397,5 @@ const PROPERTY_GUIDES = {
       }
     ],
     "golfCartsAllowed": true
-  },
-  "1670": {
-    "propertyName": "1670",
-    "slug": "1670",
-    "page": "1670.html",
-    "guestyUrl": "https://oceanvacationsmb.guestybookings.com/properties/6ad57689b3d401003124f784",
-    "address": "",
-    "unit": "1670",
-    "heroImage": "",
-    "parkingSpaces": "3 parking spots with tags/passes provided",
-    "minAge": "25",
-    "sections": [
-      {
-        "title": "Basic House Rules",
-        "icon": "🚭",
-        "color": "red",
-        "details": "The booking person must be 25 years or older to book and stay, must be present at check-in, remain for the entire stay, and is responsible for any damages or violations.\nYoung children must be supervised by an adult at all times.\nNo smoking.\nPlease do not smoke inside the property. Smoking inside the property may result in a charge of $300 per room.\nNo pets or animals.\nIf evidence of an animal or pet is found inside the property, it may result in a deep cleaning charge including odor and hair removal.\nNo fireworks.\nNo parties.\nNo loud music.\nDo not exceed the number of guests listed on your reservation.\nDo not remove property items, such as bedspreads, pillows, chairs, pots, pans, dishes, glasses, or silverware, from the home or take them to the beach or other properties.\nViolation of any house rule may result in immediate cancellation of your reservation and removal from the property without a refund."
-      },
-      {
-        "title": "Responsibilities",
-        "icon": "??",
-        "color": "navy",
-        "details": "All guests are advised to secure their personal items, vehicles, and valuables during the stay.\nOcean Vacations is not responsible for loss, theft, stolen property, damages, accidents, or injury.\nGuests are responsible for returning the property in the same condition it was in at check-in.\nCleaning is not required before departure; however, trash removal and the basic checkout steps are required."
-      },
-      {
-        "title": "Parking",
-        "icon": "🚗",
-        "color": "teal",
-        "details": "PARKING POLICY:\nParking is limited to 3 cars ONLY.\nOversized vehicles are not allowed.\n3 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are NOT allowed. No trailers or oversized vehicles.\nAdditional parking is not available.\nOverflow parking is not available."
-      },
-      {
-        "title": "Pool / Amenities",
-        "icon": "🏊",
-        "color": "aqua",
-        "details": "The pool is shared with other guests in the building.\nPool hours: 9 a.m. – 10 p.m. (March 15 – November 15).\nNo alcoholic beverages or food are allowed in the pool area.\nNo glass in or around the pool — please use plastic cups.\nNo speakers or loud music in the pool area.\nNo pushing, running, jumping, or diving.\nChildren and infants must be supervised at all times.\nSwim at your own risk; there is no lifeguard on duty.\nThe pool is not heated, and we do not have the ability to heat the pool.\nDo not touch or change the pool equipment settings.\nThe pool maintenance service is managed by the HOA, and we are not responsible for the pool service schedule or availability.\nIce Machines: Available on the 2nd and 10th floors."
-      },
-      {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": "There is an elevator available for guest use. The condo is located on the 6th floor."
-      },
-      {
-        "title": "Trash / Garbage",
-        "icon": "🗑️",
-        "color": "yellow",
-        "details": "The trash chute is located down the hallway. Household garbage only!"
-      },
-      {
-        "title": "Garbage Disposal / Toilets",
-        "icon": "🚽",
-        "color": "blue",
-        "details": "Garbage disposal: Please use only soft food when operating the garbage disposal.\nDo not use it for bones, glass, metal, or any hard items.\nMisuse may result in a $50–$220 fee, depending on whether the disposal can be reset or needs replacement.\nToilets: Flush toilet paper only.\nA plunger is provided.\nMisuse may result in a $50–$220 service fee."
-      },
-      {
-        "title": "AC / Heat / Refrigerator",
-        "icon": "🌡️",
-        "color": "navy",
-        "details": "Please keep the thermostat between 70–72°F in AUTO mode.\nSetting the thermostat at or below 70°F may cause the HVAC system to freeze.\nIf AC logs show the thermostat was set at or below 70°F, guests may be held responsible for resulting HVAC maintenance, repair, or defrosting fees.\nThe refrigerator may take 12+ hours to reach full cooling when first stocked or empty."
-      },
-      {
-        "title": "Supplies Provided",
-        "icon": "🧺",
-        "color": "green",
-        "details": "Supplies Provided (startup only):\nFull linens\n1 set of towels per guest (bath + hand)\n1 paper towel roll\n2 toilet paper rolls in each bathroom\nMini soap/shampoo\nA few trash bags\nA few dishwasher pods\nA few laundry detergent pods, if the property has in-unit laundry\nKeurig coffee maker, unless otherwise noted (please bring your own pods)\nWe do not provide beach gear, beach towels, pool items, extra linens, or daily housekeeping.\nTowels are for in-house use only and should not be used as makeup removers.\nPlease bring extra toiletries, detergent/pods if needed, trash bags, spices, paper products, and anything else needed for your stay."
-      },
-      {
-        "title": "Pest Control",
-        "icon": "🐜",
-        "color": "yellow",
-        "details": "The property receives regular professional pest-control treatments.\nThis is a coastal vacation area, and occasional bugs may still appear.\nPest control service cannot be refused by the guest.\nPest control, including HOA service where applicable, has a unique door code and may enter at any time to provide service.\nPlease keep all doors and windows closed.\nIf pests, insects, or animals enter due to doors or windows being left open, the guest may be responsible for professional removal costs."
-      },
-      {
-        "title": "Cleaning & Maintenance",
-        "icon": "🛠️",
-        "color": "navy",
-        "details": "The property is professionally cleaned before every stay.\nLinens and towels are laundered and replaced regularly, but they may not be brand-new.\nNormal wear and tear may be present, especially during busy seasons with back-to-back reservations.\nVacation rental wear and tear may be visible on walls, carpets, furniture, fixtures, and other areas of the property.\nWe do our best to maintain each property with the limited time available between stays, but repairs or touch-ups are not always possible before the next arrival.\nGuests should not expect the property to look or feel brand new."
-      },
-      {
-        "title": "Refunds and Cancellations",
-        "icon": "??",
-        "color": "navy",
-        "details": "We advise guests to purchase trip insurance if they want protection for unexpected travel changes. Trip insurance is only available through Airbnb, Vrbo, or a third-party provider, and is not sold through Ocean Vacations.\nAt the time of booking, guests review the cancellation policy and agree to those terms. All bookings are honored based on the cancellation policy attached to the reservation.\nRefunds or compensation are not provided for missed spots during cleaning, mechanical breakdowns, leaks, damaged or broken items, weather, construction, internet or utility interruptions, HOA/community closures, or other unforeseen issues.\nReport any issue as soon as possible during the stay so Ocean Vacations can work to address it as quickly as possible."
-      },
-      {
-        "title": "Forgot something?",
-        "icon": "??",
-        "color": "blue",
-        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
-      },
-      {
-        "title": "Checkout Instructions",
-        "icon": "✅",
-        "color": "gray",
-        "details": "Checkout Instructions\nCheckout time is 10:00 AM.\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\nLeave all the wristbands on the kitchen counter.\n\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
-      },
-      {
-        "title": "Report Issues",
-        "icon": "??",
-        "color": "blue",
-        "details": "Please report any property issues immediately so we can work to address them as soon as possible.\nEmergency property issues are prioritized first.\nFor any life-safety, medical, fire, police, or other emergency not related to a property maintenance issue, call 911 immediately."
-      }
-    ],
-    "golfCartsAllowed": false
   }
 };
