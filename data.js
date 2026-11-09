@@ -460,7 +460,7 @@ const PROPERTY_GUIDES = {
         "title": "Basic House Rules",
         "icon": "🚭",
         "color": "red",
-        "details": "The booking person must be 25 years or older to book and stay, must be present at check-in, remain for the entire stay, and is responsible for any damages or violations.\nYoung children must be supervised by an adult at all times.\nNo smoking.\nPlease do not smoke inside the property. Smoking inside the property may result in a charge of $300 per room.\nNo pets or animals.\nIf evidence of an animal or pet is found inside the property, it may result in a deep cleaning charge including odor and hair removal.\nNo fireworks.\nNo parties.\nNo loud music.\nDo not exceed the number of guests listed on your reservation.\nDo not remove property items, such as bedspreads, pillows, chairs, pots, pans, dishes, glasses, or silverware, from the home or take them to the beach or other properties.\nViolation of any house rule may result in immediate cancellation of your reservation and removal from the property without a refund."
+        "details": "The booking person must be 25 years or older to book and stay, must be present at check-in, remain for the entire stay, and is responsible for any damages or violations.\nYoung children must be supervised by an adult at all times.\nNo smoking.\nPlease do not smoke inside the property. Smoking inside the property may result in a charge of $300 per room, smoking is only allowed in the designated smoking area!\nNo pets or animals.\nIf evidence of an animal or pet is found inside the property, it may result in a deep cleaning charge including odor and hair removal.\nNo fireworks.\nNo parties.\nNo loud music.\nDo not exceed the number of guests listed on your reservation.\nDo not remove property items, such as bedspreads, pillows, chairs, pots, pans, dishes, glasses, or silverware, from the home or take them to the beach or other properties.\nViolation of any house rule may result in immediate cancellation of your reservation and removal from the property without a refund."
       },
       {
         "title": "Responsibilities",
@@ -472,25 +472,19 @@ const PROPERTY_GUIDES = {
         "title": "Parking",
         "icon": "🚗",
         "color": "teal",
-        "details": "PARKING POLICY:\nParking is limited to 3 cars ONLY.\nOversized vehicles are not allowed.\n3 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are NOT allowed. No trailers or oversized vehicles.\nAdditional parking is not available.\nOverflow parking is not available."
+        "details": "3 parking spots with tags/passes provided\n\nPARKING POLICY:\nParking is limited to 3 cars ONLY.\nOversized vehicles are not allowed.\n3 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are NOT allowed. No trailers or oversized vehicles.\nAdditional parking is not available.\nOverflow parking is not available."
       },
       {
         "title": "Pool / Amenities",
         "icon": "🏊",
         "color": "aqua",
-        "details": "The pool is shared with other guests in the building.\nPool hours: 9 a.m. – 10 p.m. (March 15 – November 15).\nNo alcoholic beverages or food are allowed in the pool area.\nNo glass in or around the pool — please use plastic cups.\nNo speakers or loud music in the pool area.\nNo pushing, running, jumping, or diving.\nChildren and infants must be supervised at all times.\nSwim at your own risk; there is no lifeguard on duty.\nThe pool is not heated, and we do not have the ability to heat the pool.\nDo not touch or change the pool equipment settings.\nThe pool maintenance service is managed by the HOA, and we are not responsible for the pool service schedule or availability.\nIce Machines: Available on the 2nd and 10th floors."
+        "details": "The pools, lazy river, hot tub and kids splash zone are shared with other guests in the building.\n\nAll guests must wear wristband\nPool hours: 9 a.m. – 10 p.m.\nNo alcoholic beverages or food are allowed in the pool area.\nNo glass in or around the pool — please use plastic cups.\nNo smoking or vaping in the pool area.\nNo speakers or loud music in the pool area.\nNo pushing, running, jumping, or diving.\nChildren and infants must be supervised at all times.\nSwim at your own risk; there is no lifeguard on duty.\nThe pool maintenance service is managed by the HOA, and we are not responsible for the pool service schedule or availability."
       },
       {
         "title": "Elevator / Stairs",
         "icon": "🛗",
         "color": "purple",
-        "details": "There is an elevator available for guest use. The condo is located on the 6th floor."
-      },
-      {
-        "title": "Trash / Garbage",
-        "icon": "🗑️",
-        "color": "yellow",
-        "details": "The trash chute is located down the hallway. Household garbage only!"
+        "details": "There is an elevator available for guest use. The condo is located on the 16th floor."
       },
       {
         "title": "Garbage Disposal / Toilets",
@@ -538,7 +532,7 @@ const PROPERTY_GUIDES = {
         "title": "Checkout Instructions",
         "icon": "✅",
         "color": "gray",
-        "details": "Checkout Instructions\nCheckout time is 10:00 AM.\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\nLeave all the wristbands on the kitchen counter.\n\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+        "details": "Checkout time is 10:00 AM.\n\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\nLeave all wristbands on the kitchen counter.\nIf you logged into any streaming services on the Smart TVs, log out before departure.\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
       },
       {
         "title": "Report Issues",
