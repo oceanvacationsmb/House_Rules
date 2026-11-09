@@ -61,8 +61,9 @@ function formatLineHtml(line){
 
 const STORAGE_KEY = "oceanPropertyGuidesV28";
 
+let latestPublishedGuides=null;
 function getData(){
-  if(new URLSearchParams(window.location.search).get("preview")!=="1")return PROPERTY_GUIDES;
+  if(new URLSearchParams(window.location.search).get("preview")!=="1")return latestPublishedGuides||PROPERTY_GUIDES;
   try{
     const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
     if(saved&&typeof saved==='object'&&!Array.isArray(saved))return {...PROPERTY_GUIDES,...saved};
@@ -387,3 +388,11 @@ let previewSavedData=localStorage.getItem(STORAGE_KEY);
 function refreshSavedPreview(){if(new URLSearchParams(window.location.search).get("preview")!=="1")return;const latest=localStorage.getItem(STORAGE_KEY);if(latest!==previewSavedData)window.location.reload();}
 window.addEventListener("storage",event=>{if(event.key===STORAGE_KEY)refreshSavedPreview();});
 window.addEventListener("focus",refreshSavedPreview);
+
+// Read current published data even when an older HTML page is cached.
+if(new URLSearchParams(window.location.search).get('preview')!=='1'){
+ fetch('data.js?published='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)})
+ .then(response=>{if(!response.ok)throw new Error('Guide refresh unavailable');return response.text();})
+ .then(source=>{const value=JSON.parse(source.trim().replace(/^const\s+PROPERTY_GUIDES\s*=\s*/,'').replace(/;\s*$/,''));if(value&&typeof value==='object'&&!Array.isArray(value)){latestPublishedGuides=value;loadGuide();}})
+ .catch(()=>{});
+}

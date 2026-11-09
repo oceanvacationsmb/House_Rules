@@ -1,9 +1,26 @@
 (function(){
 let data,currentSlug;
+let cloudEnabled=false,publishedBase={},publishQueue=Promise.resolve(),publishTimer,pendingSaves=0,saveFailed=false;
+const API="https://shared-calendar-api.onrender.com/api/guides";
+const SESSION_KEY="oceanGuidePublishSession";
 const STORAGE_KEY = "oceanPropertyGuidesV28";
 const ADMIN_AUTH_KEY = "oceanAdminUnlocked";
 const ADMIN_PASSWORDS = ["ocean123++", "05960596"];
 
+async function api(path,options={}){
+ const response=await fetch(API+path,{...options,headers:{'Content-Type':'application/json',Authorization:'Bearer '+(sessionStorage.getItem(SESSION_KEY)||''),...options.headers},signal:AbortSignal.timeout(90000)});
+ const result=await response.json();if(!response.ok)throw new Error(result.error||'Unable to connect to GitHub.');return result;
+}
+function status(message,error=false){let el=document.getElementById('publishStatus');if(!el){el=document.createElement('p');el.id='publishStatus';el.setAttribute('role','status');document.querySelector('.admin-head').append(el);}el.textContent=message;el.style.color=error?'#b91c1c':'#166534';}
+function queuePublish(slug,property){
+ if(!cloudEnabled)return;
+ pendingSaves++;status('Saving changes to GitHub…');
+ publishQueue=publishQueue.then(async()=>{
+  try{const result=await api('/properties/'+encodeURIComponent(slug),{method:'PUT',body:JSON.stringify({property,baseProperty:publishedBase[slug]})});publishedBase[slug]=clone(result.property);saveFailed=false;if(pendingSaves===1)status(result.unchanged?'All changes saved to GitHub.':'Saved to GitHub. The public page updates when publishing finishes, usually within a couple of minutes.');}
+  catch(error){saveFailed=true;status('Not published: '+error.message+' Your browser draft is kept.',true);}
+  finally{pendingSaves--;}
+ });
+}
 function clone(x){return JSON.parse(JSON.stringify(x));}
 function load(){const base=clone(PROPERTY_GUIDES);try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(saved&&typeof saved==='object'&&!Array.isArray(saved))return {...base,...saved};}catch(e){} return base;}
 function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(data));}
@@ -62,13 +79,15 @@ function renderEditor(){
       <button class="admin-btn secondary" id="exportBtn" type="button">Export data.js</button>
       <button class="admin-btn danger" id="resetBtn" type="button">Reset Browser Edits</button>
     </div>
-    <p class="small-muted">Saved changes stay in this browser and will display on local property pages opened from this same folder/browser.</p>`;
+    <p class="small-muted">${cloudEnabled?"Changes automatically save to GitHub after you pause typing. Save to GitHub saves immediately. Public pages update after GitHub finishes publishing.":"Browser drafts only. GitHub publishing has not been connected yet."}</p>`;
 
+  ed.querySelector('#saveBtn').textContent=cloudEnabled?'Save to GitHub':'Save Browser Draft';
   ed.querySelector('#saveBtn').onclick=()=>updateCurrent(true);
+  ed.oninput=()=>{if(!cloudEnabled)return;clearTimeout(publishTimer);status('Unsaved changes…');publishTimer=setTimeout(()=>updateCurrent(false),2000);};
   ed.querySelector('#exportBtn').onclick=()=>{updateCurrent(false);download('data.js','const PROPERTY_GUIDES = '+JSON.stringify(data,null,2)+';\n');};
-  ed.querySelector('#resetBtn').onclick=()=>{if(confirm('Clear local saved edits?')){localStorage.removeItem(STORAGE_KEY);data=clone(PROPERTY_GUIDES);currentSlug=props()[0].slug;render();}};
-  ed.querySelector('#addSec').onclick=()=>{updateCurrent(false);p.sections.push({title:'New Section',icon:'📌',color:'gray',details:''});save();renderEditor();};
-  ed.querySelectorAll('.removeSec').forEach(btn=>btn.onclick=e=>{const i=+e.target.closest('.edit-section').dataset.i;updateCurrent(false);p.sections.splice(i,1);save();renderEditor();});
+  ed.querySelector('#resetBtn').onclick=()=>{if(confirm('Clear local saved edits?')){localStorage.removeItem(STORAGE_KEY);data=clone(cloudEnabled?publishedBase:PROPERTY_GUIDES);currentSlug=props()[0].slug;render();}};
+  ed.querySelector('#addSec').onclick=()=>{updateCurrent(false);p.sections.push({title:'New Section',icon:'📌',color:'gray',details:''});save();renderEditor();if(cloudEnabled)queuePublish(currentSlug,clone(p));};
+  ed.querySelectorAll('.removeSec').forEach(btn=>btn.onclick=e=>{const i=+e.target.closest('.edit-section').dataset.i;updateCurrent(false);p.sections.splice(i,1);save();renderEditor();if(cloudEnabled)queuePublish(currentSlug,clone(p));});
 }
 
 function updateCurrent(showAlert){
@@ -86,7 +105,9 @@ function updateCurrent(showAlert){
     details:div.querySelector('.secDetails').value
   }));
   save();
-  if(showAlert)alert('Draft saved in this browser. Use Preview browser draft to review it. To update the public page, export data.js and upload that file to GitHub.');
+  clearTimeout(publishTimer);publishTimer=null;
+  if(cloudEnabled)queuePublish(currentSlug,clone(p));
+  else if(showAlert)alert('Draft saved in this browser. GitHub publishing is not connected yet.');
   renderLinks();
   renderList();
 }
@@ -113,9 +134,10 @@ function showAdminLogin(){
   const form=shell.querySelector('#adminLoginForm');
   const input=shell.querySelector('#adminPassword');
   const error=shell.querySelector('#adminLoginError');
-  form.onsubmit=(event)=>{
+  form.onsubmit=async(event)=>{
     event.preventDefault();
     const password=input.value.trim();
+    if(cloudEnabled){try{error.textContent='Connecting…';const result=await api('/session',{method:'POST',body:JSON.stringify({password})});sessionStorage.setItem(SESSION_KEY,result.session);window.location.reload();}catch(problem){error.textContent=problem.message;}return;}
     if(ADMIN_PASSWORDS.includes(password)){
       sessionStorage.setItem(ADMIN_AUTH_KEY,'1');
       window.location.reload();
@@ -127,13 +149,18 @@ function showAdminLogin(){
   };
 }
 
-window.addEventListener('DOMContentLoaded',()=>{
-  if(sessionStorage.getItem(ADMIN_AUTH_KEY)!=='1'){
-    showAdminLogin();
-    return;
-  }
+window.addEventListener('beforeunload',event=>{if(publishTimer||pendingSaves||saveFailed){event.preventDefault();event.returnValue='Changes are not yet saved to GitHub.';}});
+window.addEventListener('DOMContentLoaded',async()=>{
+ try{cloudEnabled=(await api('/status')).ready;}catch(error){cloudEnabled=false;}
+ if(cloudEnabled){
+  if(!sessionStorage.getItem(SESSION_KEY)){showAdminLogin();return;}
+  try{const latest=await api('/data');publishedBase=clone(latest.data);data=clone(latest.data);}catch(error){showAdminLogin();document.getElementById('adminLoginError').textContent=error.message;return;}
+ }else{
+  if(sessionStorage.getItem(ADMIN_AUTH_KEY)!=='1'){showAdminLogin();return;}
   data=load();
-  currentSlug=props()[0]?.slug;
-  render();
+ }
+ currentSlug=props()[0]?.slug;render();
+ const note=document.querySelector('.admin-note');if(note&&cloudEnabled)note.textContent='Changes automatically save to GitHub after you pause typing. You can also use Save to GitHub. Public pages update after publishing finishes.';
+ status(cloudEnabled?'Connected to GitHub. All changes saved.':'GitHub publishing is not configured. Edits are browser drafts only.',!cloudEnabled);
 });
 })();
