@@ -62,7 +62,10 @@ function formatLineHtml(line){
 const STORAGE_KEY = "oceanPropertyGuidesV28";
 
 function getData(){
-  try{localStorage.removeItem(STORAGE_KEY);}catch(e){}
+  try{
+    const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
+    if(saved&&typeof saved==='object'&&!Array.isArray(saved))return {...PROPERTY_GUIDES,...saved};
+  }catch(e){}
   return PROPERTY_GUIDES;
 }
 function getPropertySlug(){if(window.PROPERTY_SLUG)return window.PROPERTY_SLUG;const params=new URLSearchParams(window.location.search);return params.get("p")||Object.keys(getData())[0];}

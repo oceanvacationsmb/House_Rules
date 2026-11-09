@@ -5,7 +5,7 @@ const ADMIN_AUTH_KEY = "oceanAdminUnlocked";
 const ADMIN_PASSWORDS = ["ocean123++", "05960596"];
 
 function clone(x){return JSON.parse(JSON.stringify(x));}
-function load(){try{const saved=localStorage.getItem(STORAGE_KEY);if(saved)return JSON.parse(saved);}catch(e){} return clone(PROPERTY_GUIDES);}
+function load(){const base=clone(PROPERTY_GUIDES);try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(saved&&typeof saved==='object'&&!Array.isArray(saved))return {...base,...saved};}catch(e){} return base;}
 function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(data));}
 function esc(s){return String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
 function download(filename,text){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:'text/javascript'}));a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
