@@ -62,6 +62,7 @@ function formatLineHtml(line){
 const STORAGE_KEY = "oceanPropertyGuidesV28";
 
 function getData(){
+  if(new URLSearchParams(window.location.search).get("preview")!=="1")return PROPERTY_GUIDES;
   try{
     const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
     if(saved&&typeof saved==='object'&&!Array.isArray(saved))return {...PROPERTY_GUIDES,...saved};
@@ -371,12 +372,18 @@ function loadGuide(){
   scheduleSectionScroll();
 }
 loadGuide();
+if(new URLSearchParams(window.location.search).get("preview")==="1"){
+  const notice=document.createElement('div');
+  notice.textContent='Draft preview — saved in this browser only. Export data.js and publish it to GitHub to update the public guide.';
+  notice.style.cssText='padding:14px;background:#fff3cd;color:#664d03;text-align:center;font:16px sans-serif';
+  document.body.prepend(notice);
+}
 window.addEventListener("hashchange", scheduleSectionScroll);
 window.addEventListener("load", scheduleSectionScroll);
 window.addEventListener("pageshow", scheduleSectionScroll);
 
 // Keep open previews synchronized with saves made in the admin tab.
 let previewSavedData=localStorage.getItem(STORAGE_KEY);
-function refreshSavedPreview(){const latest=localStorage.getItem(STORAGE_KEY);if(latest!==previewSavedData)window.location.reload();}
+function refreshSavedPreview(){if(new URLSearchParams(window.location.search).get("preview")!=="1")return;const latest=localStorage.getItem(STORAGE_KEY);if(latest!==previewSavedData)window.location.reload();}
 window.addEventListener("storage",event=>{if(event.key===STORAGE_KEY)refreshSavedPreview();});
 window.addEventListener("focus",refreshSavedPreview);

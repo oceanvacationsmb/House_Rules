@@ -11,8 +11,9 @@ function esc(s){return String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&l
 function download(filename,text){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:'text/javascript'}));a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
 function props(){return Object.values(data).sort((a,b)=>String(a.propertyName).localeCompare(String(b.propertyName),undefined,{numeric:true}));}
 
+function previewUrl(page){const url=new URL(page,window.location.href);url.searchParams.set('preview','1');return url.href;}
 function renderLinks(){
-  document.getElementById('pageLinks').innerHTML=props().map(p=>`<a href="${esc(p.page)}" target="_blank">${esc(p.propertyName)} -> ${esc(p.page)}</a>`).join('');
+  document.getElementById('pageLinks').innerHTML=props().map(p=>`<a href="${esc(previewUrl(p.page))}" target="_blank">${esc(p.propertyName)} -> ${esc(p.page)}</a>`).join('');
 }
 
 function renderList(){
@@ -27,7 +28,7 @@ function renderEditor(){
   ed.innerHTML=`
     <h2>Edit ${esc(p.propertyName)}</h2>
     <div class="local-links">
-      <a href="${esc(p.page)}" target="_blank">Open local page: ${esc(p.page)}</a>
+      <a href="${esc(previewUrl(p.page))}" target="_blank">Preview browser draft: ${esc(p.page)}</a>
       ${p.guestyUrl?`<a href="${esc(p.guestyUrl)}" target="_blank">Open Guesty listing</a>`:''}
     </div>
     <label>Property Name</label>
@@ -85,7 +86,7 @@ function updateCurrent(showAlert){
     details:div.querySelector('.secDetails').value
   }));
   save();
-  if(showAlert)alert('Saved in this browser. Refresh the property page to see your edits. To publish for other devices and guests, export data.js and upload it to GitHub.');
+  if(showAlert)alert('Draft saved in this browser. Use Preview browser draft to review it. To update the public page, export data.js and upload that file to GitHub.');
   renderLinks();
   renderList();
 }
