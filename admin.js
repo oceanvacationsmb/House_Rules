@@ -1,18 +1,7 @@
 (function(){
-let data,currentSlug;
-let cloudEnabled=false,publishedBase={},publishQueue=Promise.resolve(),publishTimer,pendingSaves=0,saveFailed=false;
-let publisher=null,adminShell='';
-function save(){}
+let data,currentSlug,unsavedChanges=false;
+function save(){unsavedChanges=true;}
 function status(message,error=false){let el=document.getElementById('publishStatus');if(!el){el=document.createElement('p');el.id='publishStatus';el.setAttribute('role','status');document.querySelector('.admin-head').append(el);}el.textContent=message;el.style.cssText='background:#fff;padding:14px 18px;border-radius:12px;line-height:1.5';el.style.color=error?'#b91c1c':'#166534';}
-function queuePublish(slug,property){
- if(!cloudEnabled)return;
- pendingSaves++;status('Saving changes to GitHub…');
- publishQueue=publishQueue.then(async()=>{
-  try{const result=await publisher.save(slug,property,publishedBase[slug]);publishedBase[slug]=clone(result.property);saveFailed=false;if(pendingSaves===1)status(result.unchanged?'All changes saved to GitHub.':'Saved to GitHub. The public page updates when publishing finishes, usually within a couple of minutes.');}
-  catch(error){saveFailed=true;status('Not published: '+error.message+' Your edits remain on this page; use Export data.js for a backup.',true);}
-  finally{pendingSaves--;}
- });
-}
 function clone(x){return JSON.parse(JSON.stringify(x));}
 function esc(s){return String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
 function download(filename,text){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:'text/javascript'}));a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
@@ -68,18 +57,20 @@ function renderEditor(){
       <button class="admin-btn" id="saveBtn" type="button">Save Changes</button>
       <button class="admin-btn secondary" id="exportBtn" type="button">Export data.js</button>
     </div>
-    <p class="small-muted">${cloudEnabled?"Changes save directly to GitHub after you pause typing. Save to GitHub saves immediately. The public page updates after GitHub finishes publishing.":"Connect to GitHub to save."}</p>`;
+    <p class="small-muted">Download data.js to keep your changes, then upload that file to GitHub to update the public pages.</p>`;
 
-  ed.querySelector('#saveBtn').textContent=cloudEnabled?'Save to GitHub':'Save Browser Draft';
-  ed.querySelector('#saveBtn').onclick=()=>updateCurrent(true);
-  ed.oninput=()=>{if(!cloudEnabled)return;clearTimeout(publishTimer);status('Unsaved changes…');publishTimer=setTimeout(()=>updateCurrent(false),2000);};
-  ed.querySelector('#exportBtn').onclick=()=>{updateCurrent(false);download('data.js','const PROPERTY_GUIDES = '+JSON.stringify(data,null,2)+';\n');};
-  ed.querySelector('#addSec').onclick=()=>{updateCurrent(false);p.sections.push({title:'New Section',icon:'📌',color:'gray',details:''});save();renderEditor();if(cloudEnabled)queuePublish(currentSlug,clone(p));};
-  ed.querySelectorAll('.removeSec').forEach(btn=>btn.onclick=e=>{const i=+e.target.closest('.edit-section').dataset.i;updateCurrent(false);p.sections.splice(i,1);save();renderEditor();if(cloudEnabled)queuePublish(currentSlug,clone(p));});
+  ed.querySelector('#saveBtn').textContent='Download data.js';
+  ed.querySelector('#saveBtn').onclick=()=>{updateCurrent(false);download('data.js','const PROPERTY_GUIDES = '+JSON.stringify(data,null,2)+';\n');unsavedChanges=false;status('Downloaded data.js. Upload it to GitHub and commit to publish your changes.');};
+  ed.oninput=()=>{unsavedChanges=true;status('Edits are not published. Download data.js when finished.');};
+  ed.querySelector('#exportBtn').textContent='Open GitHub Upload';
+  ed.querySelector('#exportBtn').onclick=()=>{updateCurrent(false);window.open('https://github.com/oceanvacationsmb/House_Rules/upload/main','_blank','noopener');};
+  ed.querySelector('#addSec').onclick=()=>{updateCurrent(false);p.sections.push({title:'New Section',icon:'📌',color:'gray',details:''});save();renderEditor();};
+  ed.querySelectorAll('.removeSec').forEach(btn=>btn.onclick=e=>{const i=+e.target.closest('.edit-section').dataset.i;updateCurrent(false);p.sections.splice(i,1);save();renderEditor();});
 }
 
 function updateCurrent(showAlert){
   const p=data[currentSlug];
+  const previous=JSON.stringify(p);
   p.propertyName=document.getElementById('propertyNameInput').value.trim();
   p.address=document.getElementById('addressInput').value.trim();
   p.guestyUrl=document.getElementById('guestyInput').value.trim();
@@ -92,43 +83,25 @@ function updateCurrent(showAlert){
     color:div.querySelector('.secColor').value,
     details:div.querySelector('.secDetails').value
   }));
-  save();
-  clearTimeout(publishTimer);publishTimer=null;
-  if(cloudEnabled)queuePublish(currentSlug,clone(p));
-  else if(showAlert)status('Connect to GitHub before saving.',true);
+  if(JSON.stringify(p)!==previous)save();
   renderLinks();
   renderList();
 }
 
 function render(){renderLinks();renderList();renderEditor();}
 
-function showAdminLogin(message=''){
- const shell=document.querySelector('.admin-shell');
- shell.innerHTML=`
- <div class="admin-login"><div class="admin-login-card">
- <div class="brand-pill"><span class="brand-name">Ocean Vacations</span><span class="divider">|</span><span>Admin</span></div>
- <h1>Connect to GitHub</h1>
- <p>Edit your property guides here and save directly to the House_Rules repository.</p>
- <form id="adminLoginForm">
- <label for="githubToken">GitHub access token</label>
- <input id="githubToken" type="password" autocomplete="off" spellcheck="false" required>
- <p class="small-muted">Use your RULES token with Contents read/write access to House_Rules. The token stays only in this open page. It is never saved in browser storage or public files.</p>
- <button class="admin-btn" type="submit">Connect to GitHub</button>
- <div class="admin-login-error" id="adminLoginError" aria-live="polite"></div>
- </form></div></div>`;
- const input=document.getElementById('githubToken'),error=document.getElementById('adminLoginError');error.textContent=message;
- document.getElementById('adminLoginForm').onsubmit=async event=>{
-  event.preventDefault();error.textContent='Connecting to GitHub…';
-  const candidate=new GitHubGuidePublisher({token:input.value.trim()});
-  try{
-   const latest=await candidate.read();publisher=candidate;input.value='';cloudEnabled=true;
-   publishedBase=clone(latest.data);data=clone(latest.data);shell.innerHTML=adminShell;
-   currentSlug=data['1670']?'1670':props()[0]?.slug;render();
-   document.querySelector('.admin-note').textContent='Edit a property and save directly to GitHub. Changes save automatically after you pause typing. Public pages update after GitHub finishes publishing.';
-   status('Connected directly to GitHub. All changes saved.');
-  }catch(problem){error.textContent=problem.message;}
- };
-}
-window.addEventListener('beforeunload',event=>{if(publishTimer||pendingSaves||saveFailed){event.preventDefault();event.returnValue='Changes are not yet saved to GitHub.';}});
-window.addEventListener('DOMContentLoaded',()=>{adminShell=document.querySelector('.admin-shell').innerHTML;showAdminLogin();});
+window.addEventListener('beforeunload',event=>{if(unsavedChanges){event.preventDefault();event.returnValue='Download your edited data.js before leaving.';}});
+window.addEventListener('DOMContentLoaded',async()=>{
+ data=clone(PROPERTY_GUIDES);
+ document.getElementById('editor').textContent='Loading property guides…';
+ try{
+  const response=await fetch('data.js?admin='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(10000)});
+  if(!response.ok)throw new Error('Unavailable');
+  const source=await response.text();
+  const latest=JSON.parse(source.trim().replace(/^const\s+PROPERTY_GUIDES\s*=\s*/,'').replace(/;\s*$/,''));
+  if(latest&&typeof latest==='object'&&!Array.isArray(latest))data=latest;
+ }catch(error){}
+ currentSlug=data['1670']?'1670':props()[0]?.slug;render();
+ status('Editor ready. No login required. Download data.js and upload it to GitHub to publish edits.');
+});
 })();
