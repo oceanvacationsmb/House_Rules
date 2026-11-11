@@ -182,7 +182,7 @@ function shouldShowSection(section){
   return true;
 }
 
-function sectionOrder(section){
+function sectionOrder(section, guide){
   const title=(section.title||'').toLowerCase();
   if(title.includes('basic house rules')) return 10;
   if(title.includes('responsibilities')) return 15;
@@ -192,6 +192,7 @@ function sectionOrder(section){
   if(title.includes('golf carts')) return 35;
   if(title.includes('elevator') || title.includes('stairs')) return 40;
   if(title.includes('pool') || title.includes('amenities')) return 50;
+  if(['1704','1705'].includes(String(guide?.slug)) && /bbq|barbecue|grill/.test(title)) return 55;
   if(title.includes('ac') || title.includes('heat') || title.includes('refrigerator')) return 60;
   if(title.includes('garbage disposal') || title.includes('toilets')) return 70;
   if(title.includes('forgot')) return 999;
@@ -367,7 +368,7 @@ function loadGuide(){
     .filter(shouldShowSection)
     .map(section => normalizeParkingSection(guide, section))
     .map(normalizeSectionTitle)
-    .sort((a,b)=>sectionOrder(a)-sectionOrder(b));
+    .sort((a,b)=>sectionOrder(a,guide)-sectionOrder(b,guide));
   renderSectionShortcuts(sections);
   document.getElementById("sections").innerHTML=sections.map(makeSection).join('');
   scheduleSectionScroll();
