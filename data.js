@@ -683,6 +683,12 @@ const PROPERTY_GUIDES = {
         "details": "\nThere is no elevator. This multi-level home requires stair use, and all guests must be able to climb stairs."
       },
       {
+        "title": "Trash / Garbage",
+        "icon": "🗑️",
+        "color": "yellow",
+        "details": "Trash Pickup Days — North Myrtle Beach (Short-Term Rentals)\nMay 1 – August 31: Thursday, Friday, Saturday, and Sunday\nSeptember 1 – April 30: Thursday\nPlease roll carts to the curb the night before pickup.\nTrash Rules:\nAll trash must be bagged — no loose food or garbage.\nDo not leave boxes or bags next to the carts; they will not be collected.\nCart lids must be fully closed.\nReturn carts from the street after pickup.\nFee Notice:\nA $25 cleaning fee per cart will be charged if loose trash or food requires cleaning.\n$50 fee if carts are not pushed to or from the curb as instructed.\nTrash pickup is managed by the city.\nThe schedule may change at any time.\nCarts may be full from previous guests.\nIf so, leave the carts as directed on the curb for the next pickup.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day."
+      },
+      {
         "title": "Garbage Disposal / Toilets",
         "icon": "🚽",
         "color": "blue",
@@ -785,6 +791,12 @@ const PROPERTY_GUIDES = {
         "icon": "🛗",
         "color": "purple",
         "details": "\nThere is no elevator. This multi-level home requires stair use, and all guests must be able to climb stairs."
+      },
+      {
+        "title": "Trash / Garbage",
+        "icon": "🗑️",
+        "color": "yellow",
+        "details": "Trash Pickup Days — North Myrtle Beach (Short-Term Rentals)\nMay 1 – August 31: Thursday, Friday, Saturday, and Sunday\nSeptember 1 – April 30: Thursday\nPlease roll carts to the curb the night before pickup.\nTrash Rules:\nAll trash must be bagged — no loose food or garbage.\nDo not leave boxes or bags next to the carts; they will not be collected.\nCart lids must be fully closed.\nReturn carts from the street after pickup.\nFee Notice:\nA $25 cleaning fee per cart will be charged if loose trash or food requires cleaning.\n$50 fee if carts are not pushed to or from the curb as instructed.\nTrash pickup is managed by the city.\nThe schedule may change at any time.\nCarts may be full from previous guests.\nIf so, leave the carts as directed on the curb for the next pickup.\nIf you are checking out on trash pickup day, our team will push the carts back. Please push the carts to the curb regardless of checkout day."
       },
       {
         "title": "Garbage Disposal / Toilets",
