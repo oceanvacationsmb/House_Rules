@@ -646,7 +646,7 @@ const PROPERTY_GUIDES = {
     "slug": "1704",
     "page": "1704.html",
     "guestyUrl": "https://oceanvacationsmb.guestybookings.com/en/properties/6af3ac637534e900145f91f4",
-    "address": "1704 Perrin Drive, 29582 North Myrtle Beach",
+    "address": "1704 Perrin Drive, 29582 North Myrtle Beach SC",
     "unit": "",
     "heroImage": "",
     "parkingSpaces": "Up to 5 standard-size cars",
