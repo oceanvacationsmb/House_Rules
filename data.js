@@ -4391,5 +4391,299 @@ const PROPERTY_GUIDES = {
       }
     ],
     "golfCartsAllowed": true
+  },
+  "1501": {
+    "propertyName": "1501",
+    "slug": "1501",
+    "page": "1501.html",
+    "guestyUrl": "",
+    "address": "",
+    "unit": "",
+    "heroImage": "",
+    "parkingSpaces": "",
+    "minAge": "",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": ""
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": ""
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": ""
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": ""
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": ""
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": ""
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": ""
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      }
+    ],
+    "golfCartsAllowed": false
+  },
+  "1704": {
+    "propertyName": "1704",
+    "slug": "1704",
+    "page": "1704.html",
+    "guestyUrl": "",
+    "address": "",
+    "unit": "",
+    "heroImage": "",
+    "parkingSpaces": "",
+    "minAge": "",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": ""
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": ""
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": ""
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": ""
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": ""
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": ""
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": ""
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      }
+    ],
+    "golfCartsAllowed": false
+  },
+  "1705": {
+    "propertyName": "1705",
+    "slug": "1705",
+    "page": "1705.html",
+    "guestyUrl": "",
+    "address": "",
+    "unit": "",
+    "heroImage": "",
+    "parkingSpaces": "",
+    "minAge": "",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": ""
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": ""
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": ""
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": ""
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": ""
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": ""
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": ""
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      }
+    ],
+    "golfCartsAllowed": false
   }
 };
