@@ -335,6 +335,104 @@ const PROPERTY_GUIDES = {
     ],
     "golfCartsAllowed": true
   },
+  "1501": {
+    "propertyName": "1501",
+    "slug": "1501",
+    "page": "1501.html",
+    "guestyUrl": "oceanvacationsmb.guestybookings.com/properties/6af3b65d7d07340012a66975",
+    "address": "1625 South Ocean Boulevard, 29582 North Myrtle Beach",
+    "unit": "",
+    "heroImage": "",
+    "parkingSpaces": "3 parking spots with tags/passes provided",
+    "minAge": "",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": "House Rules: The booking person must be 25 years or older to book and stay, must be present at check-in, remain for the entire stay, and is responsible for any damages or violations. Young children must be supervised by an adult at all times. No smoking No pets or animals No fireworks No parties No loud music No diving No glass in the pool area No late checkout — checkout is at 10 AM No curbside, grass, or street parking Do not exceed the number of guests listed on your reservation Towels are for in-house use only Do not use towels as makeup removers Do not remove property items (such as bedspreads, pillows, chairs, pots, pans, dishes, glasses, or silverware) from the home or take them to the beach or other properties. No smoking in common area and pool area, Smoking in allowed only in desegnated smoking area.⚠️ Violation of any house rule may result in immediate cancellation of your reservation and removal from the property without a refund."
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": "All guests are advised to secure their personal items, vehicles, and valuables during the stay.\nOcean Vacations is not responsible for loss, theft, stolen property, damages, accidents, or injury.\nGuests are responsible for returning the property in the same condition it was in at check-in.\nCleaning is not required before departure; however, trash removal and the basic checkout steps are required."
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": "3 parking spaces are permitted. Additional parking is available in public parking spaces along 17th Ave S. **Please note that guests must park across the street from the condo building to avoid tow or ticket fees. Guests must park in parking garage across the street, and are subject to a $250 charge if parking underneath building, which is for owners only.\n\nPARKING POLICY:\nParking is limited to 3 cars ONLY.\nOversized vehicles are not allowed.\n3 parking passes are provided in the unit on the dining table.\nParking tags must be displayed at all times — vehicles without a visible tag will be towed at the owner’s expense.\nMotorcycles are NOT allowed. No trailers oversized vehicles or golfcarts\nAdditional parking is not available.\nOverflow parking is not available.\n"
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": "The pools , lazy river , hot tub are shared with other guests , all guests must wear wrisbands , lost wristbands is $25/each per HOA , pool hours are 9am-10pm , no music, no glass, no running, no diving, no smoking or vaping in the pool area"
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": "There is an elevator available for guest use. The condo is located on the 15th floor."
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": "Garbage disposal: Please use only soft food when operating the garbage disposal.\nDo not use it for bones, glass, metal, or any hard items.\nMisuse may result in a $50–$220 fee, depending on whether the disposal can be reset or needs replacement.\nToilets: Flush toilet paper only.\nA plunger is provided.\nMisuse may result in a $50–$220 service fee."
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": "Please keep the thermostat between 70–72°F in AUTO mode.\nSetting the thermostat at or below 70°F may cause the HVAC system to freeze.\nIf AC logs show the thermostat was set at or below 70°F, guests may be held responsible for resulting HVAC maintenance, repair, or defrosting fees.\nThe refrigerator may take 12+ hours to reach full cooling when first stocked or empty."
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": "Supplies Provided (startup only):\nFull linens\n1 set of towels per guest (bath + hand)\n1 paper towel roll\n2 toilet paper rolls in each bathroom\nMini soap/shampoo\nA few trash bags\nA few dishwasher pods\nA few laundry detergent pods, if the property has in-unit laundry\nKeurig coffee maker, unless otherwise noted (please bring your own pods)\nWe do not provide beach gear, beach towels, pool items, extra linens, or daily housekeeping.\nTowels are for in-house use only and should not be used as makeup removers.\nPlease bring extra toiletries, detergent/pods if needed, trash bags, spices, paper products, and anything else needed for your stay."
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": "The property receives regular professional pest-control treatments.\nThis is a coastal vacation area, and occasional bugs may still appear.\nPest control service cannot be refused by the guest.\nPest control, including HOA service where applicable, has a unique door code and may enter at any time to provide service.\nPlease keep all doors and windows closed.\nIf pests, insects, or animals enter due to doors or windows being left open, the guest may be responsible for professional removal costs."
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": "The property is professionally cleaned before every stay.\nLinens and towels are laundered and replaced regularly, but they may not be brand-new.\nNormal wear and tear may be present, especially during busy seasons with back-to-back reservations.\nVacation rental wear and tear may be visible on walls, carpets, furniture, fixtures, and other areas of the property.\nWe do our best to maintain each property with the limited time available between stays, but repairs or touch-ups are not always possible before the next arrival.\nGuests should not expect the property to look or feel brand new."
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": "We advise guests to purchase trip insurance if they want protection for unexpected travel changes. Trip insurance is only available through Airbnb, Vrbo, or a third-party provider, and is not sold through Ocean Vacations.\nAt the time of booking, guests review the cancellation policy and agree to those terms. All bookings are honored based on the cancellation policy attached to the reservation.\nRefunds or compensation are not provided for missed spots during cleaning, mechanical breakdowns, leaks, damaged or broken items, weather, construction, internet or utility interruptions, HOA/community closures, or other unforeseen issues.\nReport any issue as soon as possible during the stay so Ocean Vacations can work to address it as quickly as possible."
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": "If you forgot an item, please contact us within 24 hours after departure.\nWe will transfer recovered item(s) to a third-party shipper.\nThe shipper will contact you directly to collect payment for packing, shipping, and handling.\nMinimum handling charge: $35, regardless of item size.\nShipping and boxing costs are additional.\nThank you for staying with Ocean Vacations.\nWe hope you had a wonderful stay and a safe trip home."
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": "Checkout time is 10:00 AM.\n\nBefore leaving:\nDo not make the beds.\nLeave the towels on the beds.\nLoad any used dishes into the dishwasher and start the cycle.\nRemove all trash and boxes.\nDo not leave food or beverages.\nLeave all wristbands on the kitchen counter.\nIf you logged into any streaming services on the Smart TVs, log out before departure.\nTurn off all lights, TVs, and appliances.\nSet the thermostat to 74°F in summer or 68°F in winter.\nIf any furniture was moved during your stay, return it to its original place.\nClose all windows and lock the door when leaving.\nCheck for all personal belongings before leaving.\nThank you for staying with Ocean Vacations. We hope you had a wonderful stay and a safe trip home."
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": "Please report any property issues immediately so we can work to address them as soon as possible.\nEmergency property issues are prioritized first.\nFor any life-safety, medical, fire, police, or other emergency not related to a property maintenance issue, call 911 immediately."
+      }
+    ],
+    "golfCartsAllowed": false
+  },
   "1552": {
     "propertyName": "1552",
     "slug": "1552",
@@ -539,6 +637,202 @@ const PROPERTY_GUIDES = {
         "icon": "??",
         "color": "blue",
         "details": "Please report any property issues immediately so we can work to address them as soon as possible.\nEmergency property issues are prioritized first.\nFor any life-safety, medical, fire, police, or other emergency not related to a property maintenance issue, call 911 immediately."
+      }
+    ],
+    "golfCartsAllowed": false
+  },
+  "1704": {
+    "propertyName": "1704",
+    "slug": "1704",
+    "page": "1704.html",
+    "guestyUrl": "",
+    "address": "",
+    "unit": "",
+    "heroImage": "",
+    "parkingSpaces": "",
+    "minAge": "",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": ""
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": ""
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": ""
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": ""
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": ""
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": ""
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": ""
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      }
+    ],
+    "golfCartsAllowed": false
+  },
+  "1705": {
+    "propertyName": "1705",
+    "slug": "1705",
+    "page": "1705.html",
+    "guestyUrl": "",
+    "address": "",
+    "unit": "",
+    "heroImage": "",
+    "parkingSpaces": "",
+    "minAge": "",
+    "sections": [
+      {
+        "title": "Basic House Rules",
+        "icon": "🚭",
+        "color": "red",
+        "details": ""
+      },
+      {
+        "title": "Responsibilities",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Parking",
+        "icon": "🚗",
+        "color": "teal",
+        "details": ""
+      },
+      {
+        "title": "Pool / Amenities",
+        "icon": "🏊",
+        "color": "aqua",
+        "details": ""
+      },
+      {
+        "title": "Elevator / Stairs",
+        "icon": "🛗",
+        "color": "purple",
+        "details": ""
+      },
+      {
+        "title": "Garbage Disposal / Toilets",
+        "icon": "🚽",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "AC / Heat / Refrigerator",
+        "icon": "🌡️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Supplies Provided",
+        "icon": "🧺",
+        "color": "green",
+        "details": ""
+      },
+      {
+        "title": "Pest Control",
+        "icon": "🐜",
+        "color": "yellow",
+        "details": ""
+      },
+      {
+        "title": "Cleaning & Maintenance",
+        "icon": "🛠️",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Refunds and Cancellations",
+        "icon": "??",
+        "color": "navy",
+        "details": ""
+      },
+      {
+        "title": "Forgot something?",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
+      },
+      {
+        "title": "Checkout Instructions",
+        "icon": "✅",
+        "color": "gray",
+        "details": ""
+      },
+      {
+        "title": "Report Issues",
+        "icon": "??",
+        "color": "blue",
+        "details": ""
       }
     ],
     "golfCartsAllowed": false
@@ -4391,299 +4685,5 @@ const PROPERTY_GUIDES = {
       }
     ],
     "golfCartsAllowed": true
-  },
-  "1501": {
-    "propertyName": "1501",
-    "slug": "1501",
-    "page": "1501.html",
-    "guestyUrl": "",
-    "address": "",
-    "unit": "",
-    "heroImage": "",
-    "parkingSpaces": "",
-    "minAge": "",
-    "sections": [
-      {
-        "title": "Basic House Rules",
-        "icon": "🚭",
-        "color": "red",
-        "details": ""
-      },
-      {
-        "title": "Responsibilities",
-        "icon": "??",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Parking",
-        "icon": "🚗",
-        "color": "teal",
-        "details": ""
-      },
-      {
-        "title": "Pool / Amenities",
-        "icon": "🏊",
-        "color": "aqua",
-        "details": ""
-      },
-      {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": ""
-      },
-      {
-        "title": "Garbage Disposal / Toilets",
-        "icon": "🚽",
-        "color": "blue",
-        "details": ""
-      },
-      {
-        "title": "AC / Heat / Refrigerator",
-        "icon": "🌡️",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Supplies Provided",
-        "icon": "🧺",
-        "color": "green",
-        "details": ""
-      },
-      {
-        "title": "Pest Control",
-        "icon": "🐜",
-        "color": "yellow",
-        "details": ""
-      },
-      {
-        "title": "Cleaning & Maintenance",
-        "icon": "🛠️",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Refunds and Cancellations",
-        "icon": "??",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Forgot something?",
-        "icon": "??",
-        "color": "blue",
-        "details": ""
-      },
-      {
-        "title": "Checkout Instructions",
-        "icon": "✅",
-        "color": "gray",
-        "details": ""
-      },
-      {
-        "title": "Report Issues",
-        "icon": "??",
-        "color": "blue",
-        "details": ""
-      }
-    ],
-    "golfCartsAllowed": false
-  },
-  "1704": {
-    "propertyName": "1704",
-    "slug": "1704",
-    "page": "1704.html",
-    "guestyUrl": "",
-    "address": "",
-    "unit": "",
-    "heroImage": "",
-    "parkingSpaces": "",
-    "minAge": "",
-    "sections": [
-      {
-        "title": "Basic House Rules",
-        "icon": "🚭",
-        "color": "red",
-        "details": ""
-      },
-      {
-        "title": "Responsibilities",
-        "icon": "??",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Parking",
-        "icon": "🚗",
-        "color": "teal",
-        "details": ""
-      },
-      {
-        "title": "Pool / Amenities",
-        "icon": "🏊",
-        "color": "aqua",
-        "details": ""
-      },
-      {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": ""
-      },
-      {
-        "title": "Garbage Disposal / Toilets",
-        "icon": "🚽",
-        "color": "blue",
-        "details": ""
-      },
-      {
-        "title": "AC / Heat / Refrigerator",
-        "icon": "🌡️",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Supplies Provided",
-        "icon": "🧺",
-        "color": "green",
-        "details": ""
-      },
-      {
-        "title": "Pest Control",
-        "icon": "🐜",
-        "color": "yellow",
-        "details": ""
-      },
-      {
-        "title": "Cleaning & Maintenance",
-        "icon": "🛠️",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Refunds and Cancellations",
-        "icon": "??",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Forgot something?",
-        "icon": "??",
-        "color": "blue",
-        "details": ""
-      },
-      {
-        "title": "Checkout Instructions",
-        "icon": "✅",
-        "color": "gray",
-        "details": ""
-      },
-      {
-        "title": "Report Issues",
-        "icon": "??",
-        "color": "blue",
-        "details": ""
-      }
-    ],
-    "golfCartsAllowed": false
-  },
-  "1705": {
-    "propertyName": "1705",
-    "slug": "1705",
-    "page": "1705.html",
-    "guestyUrl": "",
-    "address": "",
-    "unit": "",
-    "heroImage": "",
-    "parkingSpaces": "",
-    "minAge": "",
-    "sections": [
-      {
-        "title": "Basic House Rules",
-        "icon": "🚭",
-        "color": "red",
-        "details": ""
-      },
-      {
-        "title": "Responsibilities",
-        "icon": "??",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Parking",
-        "icon": "🚗",
-        "color": "teal",
-        "details": ""
-      },
-      {
-        "title": "Pool / Amenities",
-        "icon": "🏊",
-        "color": "aqua",
-        "details": ""
-      },
-      {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": ""
-      },
-      {
-        "title": "Garbage Disposal / Toilets",
-        "icon": "🚽",
-        "color": "blue",
-        "details": ""
-      },
-      {
-        "title": "AC / Heat / Refrigerator",
-        "icon": "🌡️",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Supplies Provided",
-        "icon": "🧺",
-        "color": "green",
-        "details": ""
-      },
-      {
-        "title": "Pest Control",
-        "icon": "🐜",
-        "color": "yellow",
-        "details": ""
-      },
-      {
-        "title": "Cleaning & Maintenance",
-        "icon": "🛠️",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Refunds and Cancellations",
-        "icon": "??",
-        "color": "navy",
-        "details": ""
-      },
-      {
-        "title": "Forgot something?",
-        "icon": "??",
-        "color": "blue",
-        "details": ""
-      },
-      {
-        "title": "Checkout Instructions",
-        "icon": "✅",
-        "color": "gray",
-        "details": ""
-      },
-      {
-        "title": "Report Issues",
-        "icon": "??",
-        "color": "blue",
-        "details": ""
-      }
-    ],
-    "golfCartsAllowed": false
   }
 };
