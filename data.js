@@ -3060,12 +3060,6 @@ const PROPERTY_GUIDES = {
         "details": "The pool is shared with other guests in the triplex.\nPool hours: 9 a.m. – 10 p.m.\nChildren and infants must be supervised at all times.\nSwim at your own risk — there is no lifeguard on duty.\nNo pushing, running, jumping, or diving.\nAbsolutely NO GLASS in or around the pool — please use plastic cups only.\nNo food inside the pool.\nThe pool is not heated and we do not have the ability to heat the pool.\nDo not touch or adjust the pool equipment.\nPool Maintenance:\nThe pool is cleaned daily from April 1st – October 1st.\nThe pool is cleaned once per week from October 1st – April 1st.\nSome leaves or debris may be present at times due to weather conditions."
       },
       {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": "This multi level home requires the use of stairs.\nThe elevator is unavailable unless added for an additional fee of $150.\nIf the elevator fee is paid and access is granted, the following terms apply.\nLuggage and heavy items are prohibited.\nAny misuse will result in immediate termination of elevator access without a refund.\nIf the elevator is not added, all guests must be able to climb stairs.\nA separate link or request will be sent after booking.\nElevator access must be arranged in advance."
-      },
-      {
         "title": "BBQ Grill",
         "icon": "🔥",
         "color": "orange",
@@ -3177,12 +3171,6 @@ const PROPERTY_GUIDES = {
         "details": "The pool is shared with other guests in the triplex.\nPool hours: 9 a.m. – 10 p.m.\nChildren and infants must be supervised at all times.\nSwim at your own risk — there is no lifeguard on duty.\nNo pushing, running, jumping, or diving.\nAbsolutely NO GLASS in or around the pool — please use plastic cups only.\nNo food inside the pool.\nThe pool is not heated and we do not have the ability to heat the pool.\nDo not touch or adjust the pool equipment.\nPool Maintenance:\nThe pool is cleaned daily from April 1st – October 1st.\nThe pool is cleaned once per week from October 1st – April 1st.\nSome leaves or debris may be present at times due to weather conditions."
       },
       {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": "This multi level home requires the use of stairs.\nThe elevator is unavailable unless added for an additional fee of $150.\nIf the elevator fee is paid and access is granted, the following terms apply.\nLuggage and heavy items are prohibited.\nAny misuse will result in immediate termination of elevator access without a refund.\nIf the elevator is not added, all guests must be able to climb stairs.\nA separate link or request will be sent after booking.\nElevator access must be arranged in advance."
-      },
-      {
         "title": "BBQ Grill",
         "icon": "🔥",
         "color": "orange",
@@ -3292,12 +3280,6 @@ const PROPERTY_GUIDES = {
         "icon": "🏊",
         "color": "aqua",
         "details": "The pool is shared with other guests in the triplex.\nPool hours: 9 a.m. – 10 p.m.\nChildren and infants must be supervised at all times.\nSwim at your own risk — there is no lifeguard on duty.\nNo pushing, running, jumping, or diving.\nAbsolutely NO GLASS in or around the pool — please use plastic cups only.\nNo food inside the pool.\nThe pool is not heated and we do not have the ability to heat the pool.\nDo not touch or adjust the pool equipment.\nPool Maintenance:\nThe pool is cleaned daily from April 1st – October 1st.\nThe pool is cleaned once per week from October 1st – April 1st.\nSome leaves or debris may be present at times due to weather conditions."
-      },
-      {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": "This multi level home requires the use of stairs.\nThe elevator is unavailable unless added for an additional fee of $150.\nIf the elevator fee is paid and access is granted, the following terms apply.\nLuggage and heavy items are prohibited.\nAny misuse will result in immediate termination of elevator access without a refund.\nIf the elevator is not added, all guests must be able to climb stairs.\nA separate link or request will be sent after booking.\nElevator access must be arranged in advance."
       },
       {
         "title": "BBQ Grill",
@@ -4077,12 +4059,6 @@ const PROPERTY_GUIDES = {
         "icon": "🏊",
         "color": "aqua",
         "details": "Shared pool with Unit B.\nChildren and infants must be supervised at all times.\nSwim at your own risk — there is no lifeguard on duty.\nNo pushing, running, jumping, or diving.\nAbsolutely NO GLASS in or around the pool — please use plastic cups only.\nNo food inside the pool.\nThe pool is not heated.\nWe do not have the ability to heat the pool.\nDo not touch or adjust the pool equipment.\nPool Maintenance:\nThe pool is cleaned twice per week from April 1 – September 15, otherwise once per week.\nYou may occasionally see leaves or debris in the pool due to outdoor conditions."
-      },
-      {
-        "title": "Elevator / Stairs",
-        "icon": "🛗",
-        "color": "purple",
-        "details": "This multi level home requires the use of stairs.\nThe elevator is unavailable unless added for an additional fee of $150.\nIf the elevator fee is paid and access is granted, the following terms apply.\nLuggage and heavy items are prohibited.\nAny misuse will result in immediate termination of elevator access without a refund.\nIf the elevator is not added, all guests must be able to climb stairs.\nA separate link or request will be sent after booking.\nElevator access must be arranged in advance."
       },
       {
         "title": "BBQ Grill",
