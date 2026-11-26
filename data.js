@@ -3250,7 +3250,7 @@ const PROPERTY_GUIDES = {
     "propertyName": "TUSCAN C",
     "slug": "tuscan-c",
     "page": "tuscan-c.html",
-    "guestyUrl": "https://oceanvacationsmb.guestybookings.com/properties/68db1a64aae7e80013b08f5b",
+    "guestyUrl": "https://oceanvacationsmb.guestybookings.com/en/properties/6abad24caf5ec30043a44f45",
     "address": "213 76th Avenue North, Myrtle Beach, SC 29572",
     "unit": "Unit C",
     "heroImage": "",
